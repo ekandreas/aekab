@@ -25,7 +25,15 @@
               @endif
                 <div class="w-clearfix puffheaderleft">
                   <div class="puffheaderleftinsideleft">
-                    <div class="puffheadernumbers"></div>
+              
+                  @if( papi_get_page_type_id() == 'blog-post' )
+                        <div class="puffheadernumbers">{{ __('BLOGGPOST','AEKAB' ) }}</div>
+                  @elseif( papi_get_page_type_id() == 'portfolio-post' )
+                        <div class="puffheadernumbers">{{ __('REFERENS','AEKAB' ) }}</div>
+                  @else
+                        <div class="puffheadernumbers">{{ __('NYHET','AEKAB' ) }}</div>
+                  @endif
+
                   </div>
                   <div class="puffheaderleftinsideright">
                     <div class="puffheadernumbers"></div>
@@ -62,10 +70,12 @@
   </div>
   <div class="w-section sectionpuffsmorenews">
     <div class="w-container">
-      <a href="{{ get_permalink($module->morepost) }}" class="w-inline-block startpagelinkblockmorenews">
-        <div>{{$module->moretitle}}</div>
+      <?php $more = papi_get_field( $module->ID, 'more' ); ?>
+      @if( $more )
+      <a href="{{ $more->url }}" class="w-inline-block startpagelinkblockmorenews">
+        <div>{{ $more->title }}</div>
       </a>
-      <div class="startpagedivswisch"><img alt="Swisch" width="193" src="{{ ekandreas\Assets\asset_path('images/swisch-sml.png') }}" class="swischsml">
-      </div>
+      @endif
     </div>
   </div>
+  @include('views.parts.swisch')

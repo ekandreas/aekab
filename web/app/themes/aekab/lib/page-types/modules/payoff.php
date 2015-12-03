@@ -15,7 +15,7 @@ class Payoff_Module_Type extends Papi_Page_Type
     public function register()
     {
         $this->remove([
-            'editor',
+            'editor', 'wpseo_meta',
         ]);
 
         $this->box(__('Payoffens inställningar', 'aekab'), [

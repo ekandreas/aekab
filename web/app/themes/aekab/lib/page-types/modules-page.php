@@ -15,7 +15,7 @@ class Modules_Page_Type extends Papi_Page_Type
     public function register() {
 
         $this->remove([
-            'editor',
+            'editor', 'wpseo_meta',
         ]);
 
         $this->box( dirname(__FILE__) . '/boxparts/modules.php' );

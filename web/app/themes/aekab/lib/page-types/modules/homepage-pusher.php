@@ -15,7 +15,7 @@ class Homepage_Pusher_Module_Type extends Papi_Page_Type
     public function register()
     {
         $this->remove([
-            'editor',
+            'editor', 'wpseo_meta',
         ]);
 
         $this->box(__('Innehåll', 'aekab'), [
@@ -39,21 +39,10 @@ class Homepage_Pusher_Module_Type extends Papi_Page_Type
             ]),
 
             papi_property([
-                'slug'  => 'moretitle',
-                'title' => __('Läs mer -text', 'aekab'),
-                'description' => __('Texten till länken under puffarna', 'aekab'),
-                'type'  => 'string',
-            ]),
-
-            papi_property([
-                'slug'  => 'morepost',
-                'title' => __('Läs mer -sida', 'aekab'),
-                'description' => __('Sida som "Läs mer" ska länka till', 'aekab'),
-                'type'  => 'post',
-                'settings' => [
-                    'placeholder' => __('Välj en sida eller post', 'aekab'),
-                    'post_type' => [ 'post', 'page' ],
-                ]
+                'slug'  => 'more',
+                'title' => __('Läs mer', 'aekab'),
+                'description' => __('Länk under puffarna', 'aekab'),
+                'type'  => 'link',
             ]),
 
         ]);

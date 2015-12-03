@@ -15,7 +15,7 @@ class Homepage_Hero_Module_Type extends Papi_Page_Type
     public function register()
     {
         $this->remove([
-            'editor',
+            'editor', 'wpseo_meta',
         ]);
 
         $this->box(__('Innehåll', 'aekab'), [
