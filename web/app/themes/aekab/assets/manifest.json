@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "scripts/main.js",
+        "scripts/webflow.js"
+      ],
+      "main": true
+    },
+    "main.css": {
+      "files": [
+        "styles/normalize.css",
+        "styles/aekab.webflow.css",
+        "styles/webflow.css",
+        "styles/main.scss"
+      ],
+      "main": true
+    },
+    "jquery.js": {
+      "bower": ["jquery"]
+    }
+  },
+  "config": {
+    "devUrl": "http://aekab.dev"
+  }
+}
