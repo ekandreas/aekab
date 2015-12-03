@@ -29,7 +29,7 @@ function get_post_excerpt( $post_or_post_id=null, $length = 100 )
             $line=$match[0];
         }
 
-        $excerpt = $line . '... Läs mer!';
+        $excerpt = $line . '...<br/>Läs mer!';
     }
     return wp_kses_post( $excerpt );
 }

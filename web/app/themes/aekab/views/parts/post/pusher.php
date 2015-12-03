@@ -42,7 +42,12 @@
                     <div class="blogpuffheadertxt">{{ $main_cat->name }}</div>
                   @endif
                 </div>
-              </div><a href="{{ get_the_permalink() }}" class="w-inline-block blogpuffclickarea"><h3 class="blogpuffheadline">AEKAB bygger socialt intranät</h3><p class="blogpuffbody">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornar...</p></a>
+              </div>
+              <a href="{{ get_the_permalink() }}" class="w-inline-block blogpuffclickarea"><h3 class="blogpuffheadline">{{the_title()}}</h3>
+                <p class="blogpuffbody">
+                  {{ get_post_excerpt() }}                
+                </p>
+              </a>
             </div>
           </div> 
 
