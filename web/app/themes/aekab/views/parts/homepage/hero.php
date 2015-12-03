@@ -14,14 +14,20 @@
           <p class="startpageherop">{{ $module->sellpoint }}</p>
           <div class="w-row startpageherorow">
             <div class="w-col w-col-6 w-col-small-6 w-clearfix">
-              <a href="{{ get_permalink($module->buttonpost1) }}" class="w-inline-block startpageherobtn1">
-                <div class="startpageherobtn1text">{{ $module->buttontitle1 }}</div>
-              </a>
+              <?php $link = papi_get_field( $module->ID, 'link1' ) ?>
+              @if( $link )
+                <a href="{{ $link->url }}" class="w-inline-block startpageherobtn1">
+                  <div class="startpageherobtn1text">{{ $link->title }}</div>
+                </a>
+              @endif
             </div>
             <div class="w-col w-col-6 w-col-small-6">
-              <a href="{{ get_permalink($module->buttonpost2) }}" class="w-inline-block startpageherobtn2">
-                <div class="startpageherobtn1text startpageherobtn2text">{{ $module->buttontitle1 }}</div>
-              </a>
+              <?php $link = papi_get_field( $module->ID, 'link2' ) ?>
+              @if( $link )
+                <a href="{{ $link->url }}" class="w-inline-block startpageherobtn2">
+                  <div class="startpageherobtn1text startpageherobtn2text">{{ $link->title }}</div>
+                </a>
+              @endif
             </div>
           </div>
         </div>

@@ -29,7 +29,7 @@
                   @if( papi_get_page_type_id() == 'blog-post' )
                         <div class="puffheadernumbers">{{ __('BLOGGPOST','AEKAB' ) }}</div>
                   @elseif( papi_get_page_type_id() == 'portfolio-post' )
-                        <div class="puffheadernumbers">{{ __('REFERENS','AEKAB' ) }}</div>
+                        <div class="puffheadernumbers">{{ __('UPPDRAG','AEKAB' ) }}</div>
                   @else
                         <div class="puffheadernumbers">{{ __('NYHET','AEKAB' ) }}</div>
                   @endif

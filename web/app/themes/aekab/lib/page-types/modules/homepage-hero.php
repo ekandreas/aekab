@@ -9,6 +9,7 @@ class Homepage_Hero_Module_Type extends Papi_Page_Type
             'name'        => __('Startsideuppslag', 'aekab'),
             'description' => __('Stort uppslag med pekande hand', 'aekab'),
             'template' => 'views.parts.homepage.hero',
+            'thumbnail' => get_stylesheet_directory_uri() . '/assets/images/module-homepage-hero.png',
         ];
     }
 
@@ -49,39 +50,17 @@ class Homepage_Hero_Module_Type extends Papi_Page_Type
             ]),
 
             papi_property([
-                'slug'  => 'buttontitle1',
-                'title' => __('Knapp 1 text', 'aekab'),
-                'description' => __('Texten till den första knappen', 'aekab'),
-                'type'  => 'string',
+                'slug'  => 'link1',
+                'title' => __('Vidarelänkning 1', 'aekab'),
+                'description' => __('Knapp #1 för att gå vidare', 'aekab'),
+                'type'  => 'link',
             ]),
 
             papi_property([
-                'slug'  => 'buttonpost1',
-                'title' => __('Knapp 1 sida/post', 'aekab'),
-                'description' => __('Sida som knappen ska länka till', 'aekab'),
-                'type'  => 'post',
-                'settings' => [
-                    'placeholder' => __('Välj en sida eller post', 'aekab'),
-                    'post_type' => [ 'post', 'page' ],
-                ]
-            ]),
-
-            papi_property([
-                'slug'  => 'buttontitle2',
-                'title' => __('Knapp 2 text', 'aekab'),
-                'description' => __('Texten till den andra knappen', 'aekab'),
-                'type'  => 'string',
-            ]),
-
-            papi_property([
-                'slug'  => 'buttonpost2',
-                'title' => __('Knapp 2 sida/post', 'aekab'),
-                'description' => __('Sida som knappen ska länka till', 'aekab'),
-                'type'  => 'post',
-                'settings' => [
-                    'placeholder' => __('Välj en sida eller post', 'aekab'),
-                    'post_type' => [ 'post', 'page' ],
-                ]
+                'slug'  => 'link2',
+                'title' => __('Vidarelänkning 2', 'aekab'),
+                'description' => __('Knapp #2 för att gå vidare', 'aekab'),
+                'type'  => 'link',
             ]),
 
 

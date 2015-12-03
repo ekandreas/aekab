@@ -20,6 +20,8 @@ class Modules_Page_Type extends Papi_Page_Type
 
         $this->box( dirname(__FILE__) . '/boxparts/modules.php' );
 
+        $this->box( dirname(__FILE__) . '/boxparts/design.php' );
+
     }
 
 }

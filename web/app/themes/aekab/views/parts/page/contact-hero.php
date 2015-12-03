@@ -33,4 +33,5 @@
         </a>
       </div>
     </div>
-  </div>
+  </div>  
+  @include('views.parts.share')  

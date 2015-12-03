@@ -9,6 +9,7 @@ class Homepage_Pusher_Module_Type extends Papi_Page_Type
             'name'        => __('Startsidepuffar', 'aekab'),
             'description' => __('Nyheter och bloggposter, 3 st', 'aekab'),
             'template' => 'views.parts.homepage.pusher',
+            'thumbnail' => get_stylesheet_directory_uri() . '/assets/images/module-homepage-posts.png',
         ];
     }
 

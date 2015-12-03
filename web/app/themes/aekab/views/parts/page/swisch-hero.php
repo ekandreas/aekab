@@ -1,4 +1,4 @@
-<div class="w-section heroaboutpage" style="background-image: url('{{ wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'full' )[0] }}');">
+<div class="w-section heroaboutpage" style="background-image: url('{{ wp_get_attachment_image_src( get_post_thumbnail_id( $module->ID ), 'full' )[0] }}');">
     <div class="heroaboutwrapper">
       <div class="w-container">
         <div class="w-row">
@@ -15,4 +15,4 @@
       </div>
     </div>
   </div>  
-  @include('views.parts.pointers.blue_left')
+  @include('views.parts.share')  

@@ -9,6 +9,7 @@ class Hero_Contact_Module_Type extends Papi_Page_Type
             'name'        => __('Kontaktuppslag', 'aekab'),
             'description' => __('Uppslag med rubrik och dimmad bild (service)', 'aekab'),
             'template' => 'views.parts.page.contact-hero',
+            'thumbnail' => get_stylesheet_directory_uri() . '/assets/images/module-contact-hero.png',
         ];
     }
 

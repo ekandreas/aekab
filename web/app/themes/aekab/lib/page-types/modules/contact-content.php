@@ -9,6 +9,7 @@ class Contact_Content_Module_Type extends Papi_Page_Type
             'name'        => __('Kontaktinnehåll', 'aekab'),
             'description' => __('Modul för innehållsutvisning med kontakt', 'aekab'),
             'template' => 'views.parts.page.content',
+            'thumbnail' => get_stylesheet_directory_uri() . '/assets/images/module-contact-content.png',
         ];
     }
 

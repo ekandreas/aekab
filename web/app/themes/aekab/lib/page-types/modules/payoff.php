@@ -9,6 +9,7 @@ class Payoff_Module_Type extends Papi_Page_Type
             'name'        => __('Payoff', 'aekab'),
             'description' => __('Vinjettryckare för slogans', 'aekab'),
             'template' => 'views.parts.payoff',
+            'thumbnail' => get_stylesheet_directory_uri() . '/assets/images/module-payoff.png',
         ];
     }
 

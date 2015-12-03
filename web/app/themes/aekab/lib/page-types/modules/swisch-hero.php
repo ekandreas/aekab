@@ -9,6 +9,7 @@ class Swisch_Hero_Module_Type extends Papi_Page_Type
             'name'        => __('Sidouppslag med swisch', 'aekab'),
             'description' => __('Uppslag med rubrik och dimmad bild (om oss) och swisch', 'aekab'),
             'template' => 'views.parts.page.swisch-hero',
+            'thumbnail' => get_stylesheet_directory_uri() . '/assets/images/module-swisch-hero.png',
         ];
     }
 

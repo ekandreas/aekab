@@ -6,14 +6,8 @@
             {{ papi_get_option('footer_summary') }}
           </p>
           <div class="w-clearfix footersharediv">
-            <a href="#" class="w-inline-block footersharebtn">
-              <div class="footersharebtntext">Dela</div>
-            </a>
-            <a href="#" class="w-inline-block footersharebtn">
-              <div class="footersharebtntext">Gilla</div>
-            </a>
             <div class="footerheartbox">
-              <div class="footerheartnumber">54</div>
+              <div class="footerheartnumber">Code is Poetry</div>
             </div>
           </div>
         </div>

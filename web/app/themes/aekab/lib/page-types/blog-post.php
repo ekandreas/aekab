@@ -14,7 +14,8 @@ class Blog_Page_Type extends Papi_Page_Type
 
     public function register() {
 
-        //$this->box( dirname(__FILE__) . '/parts/sidebar-modules.php' );
+        $this->box( dirname(__FILE__) . '/boxparts/main-term.php' );
+        $this->box( dirname(__FILE__) . '/boxparts/payoff.php' );
 
     }
 

@@ -9,6 +9,7 @@ class Homepage_BigCat_Module_Type extends Papi_Page_Type
             'name'        => __('Startsidekategorier', 'aekab'),
             'description' => __('Stora kategoriikoner visas upp (hårdkodat)', 'aekab'),
             'template' => 'views.parts.homepage.bigcat',
+            'thumbnail' => get_stylesheet_directory_uri() . '/assets/images/module-bigcat.png',
         ];
     }
 
