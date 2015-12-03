@@ -19,7 +19,7 @@
 
     <div class="w-clearfix toolssharediv toolsarticle">
       <div class="articletoolbardate">{{ get_the_date( 'j' ) }} {{ strtolower( get_the_date( 'F' ) ) }} {{ get_the_date( 'Y' ) }}</div>
-        <a href="https://twitter.com/share" class="w-inline-block toolssharebtn"{count} data-size="large">{{ __('Twitter','aekab') }}</a>
+        <a target="_blank" href="https://twitter.com/share" class="w-inline-block toolssharebtn"{count} data-size="large">{{ __('Twitter','aekab') }}</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     </div>
   </div>
