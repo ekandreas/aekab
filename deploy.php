@@ -28,7 +28,7 @@ set('env_vars', '/usr/bin/env');
 
 task('deploy:restart', function () {
     writeln('Purge cache...');
-    run( 'rm -Rf web/app/themes/aekab/.cache && mkdir web/app/themes/aekab/.cache' );
+    run( 'rm -Rf web/app/themes/aekab/.cache && mkdir -p shared/web/app/themes/aekab/.cache' );
 })->desc('Restarting apache2 and varnish');
 
 task( 'deploy', [

@@ -28,20 +28,24 @@ a.w-nav-link.w--current {
 	color: #fff;
 }
 
-.sectionarticlecontent img {
-	max-width: 90%;
+img.articlebigpic {
+	width: 100%;
 }
 
 .aligncenter {
 	text-align: center;
 }
 
+figure {
+	width: 100%;
+	font-style: italic;
+	border: 1px solid #eeeeee;
+	padding: 4px;
+}
+
+
 /* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 480px) {
-
-    figure.wp-caption {
-		max-width: 400px;
-    }
 
     .blogpuffbtndiv {
 		margin-top: 170px;
