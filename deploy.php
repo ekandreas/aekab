@@ -27,7 +27,7 @@ set('env_vars', '/usr/bin/env');
 
 task('deploy:restart', function () {
     writeln('Purge cache...');
-    //run("curl -s http://www.skolporten.se/wp/wp-admin/admin-ajax.php?action=purge");
+    run( 'rm -Rf shared/web/app/themes/aekab/.cache && mkdir shared/web/app/themes/aekab/.cache' );
 })->desc('Restarting apache2 and varnish');
 
 task( 'deploy', [
