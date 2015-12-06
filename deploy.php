@@ -2,6 +2,7 @@
 date_default_timezone_set('Europe/Stockholm');
 
 include_once 'vendor/deployer/deployer/recipe/common.php';
+include_once 'pull.php';
 
 server( 'development', 'aekab.dev', 22 )
     ->env('deploy_path','/var/www/aekab')
