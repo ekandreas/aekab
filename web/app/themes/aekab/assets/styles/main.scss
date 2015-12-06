@@ -31,3 +31,11 @@ a.w-nav-link.w--current {
 .sectionarticlecontent img {
 	max-width: 90%;
 }
+
+/* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+
+    figure.wp-caption {
+		max-width: 400px;
+    }
+}
