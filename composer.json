@@ -45,7 +45,8 @@
     "wpackagist-plugin/google-sitemap-generator":"*",
     "wpackagist-plugin/oembed-gist":"*",
     "wpackagist-plugin/blade": "*",
-    "roots/soil": "^3.6"
+    "roots/soil": "^3.6",
+    "wpackagist-plugin/varnish-http-purge": "*"
   },
   "extra": {
     "installer-paths": {

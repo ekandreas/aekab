@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "417a977eae32f39983827039332362e7",
-    "content-hash": "c0441aa8df4c214228ea3431a157bcf6",
+    "hash": "d5c535f91fb184d58f82f19d9edf611a",
+    "content-hash": "dab3f15abdbf6fa47b1fb21a794acedb",
     "packages": [
         {
             "name": "composer/installers",
@@ -2017,6 +2017,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/oembed-gist/"
+        },
+        {
+            "name": "wpackagist-plugin/varnish-http-purge",
+            "version": "3.7.3",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/varnish-http-purge/",
+                "reference": "tags/3.7.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/varnish-http-purge.3.7.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/varnish-http-purge/"
         },
         {
             "name": "xrstf/composer-php52",
