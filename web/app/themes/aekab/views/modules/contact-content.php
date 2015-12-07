@@ -15,7 +15,7 @@
           @endif
 
         </div>
-        @include('views.parts.contact', ['contact_id'=>$module->contact])
+        @include('views.modules.contact', ['contact_id'=>$module->contact])
       </div>
     </div>
   </div>

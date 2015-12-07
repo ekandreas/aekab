@@ -8,8 +8,8 @@ class Page_Hero_Module_Type extends Papi_Page_Type
             'post_type'   => 'module',
             'name'        => __('Sidouppslag', 'aekab'),
             'description' => __('Uppslag med rubrik och dimmad bild (service)', 'aekab'),
-            'template' => 'views.parts.page.hero',
-            'thumbnail' => get_stylesheet_directory_uri() . '/assets/images/module-page-hero.png',
+            'template' => \ekandreas\Papi::module_view_path(__CLASS__),
+            'thumbnail' => \ekandreas\Papi::module_thumbnail_path(__CLASS__),
         ];
     }
 

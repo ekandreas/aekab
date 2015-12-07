@@ -8,8 +8,8 @@ class Homepage_Pusher_Module_Type extends Papi_Page_Type
             'post_type'   => 'module',
             'name'        => __('Startsidepuffar', 'aekab'),
             'description' => __('Nyheter och bloggposter, 3 st', 'aekab'),
-            'template' => 'views.parts.homepage.pusher',
-            'thumbnail' => get_stylesheet_directory_uri() . '/assets/images/module-homepage-posts.png',
+            'template' => \ekandreas\Papi::module_view_path(__CLASS__),
+            'thumbnail' => \ekandreas\Papi::module_thumbnail_path(__CLASS__),
         ];
     }
 

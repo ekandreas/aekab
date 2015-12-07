@@ -8,8 +8,8 @@ class Page_Posts_Module_Type extends Papi_Page_Type
             'post_type'   => 'module',
             'name'        => __('Postlistning', 'aekab'),
             'description' => __('Lista med Nyheter, Uppdrag och blogg -poster', 'aekab'),
-            'template' => 'views.parts.page.post-list',
-            'thumbnail' => get_stylesheet_directory_uri() . '/assets/images/module-post-list.png',
+            'template' => \ekandreas\Papi::module_view_path(__CLASS__),
+            'thumbnail' => \ekandreas\Papi::module_thumbnail_path(__CLASS__),
         ];
     }
 

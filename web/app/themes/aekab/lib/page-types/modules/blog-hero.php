@@ -8,8 +8,8 @@ class Blog_Hero_Module_Type extends Papi_Page_Type
             'post_type'   => 'module',
             'name'        => __('Blogguppslag', 'aekab'),
             'description' => __('Uppslag med centrerad rubrik och dimmad bild (blogg)', 'aekab'),
-            'template' => 'views.parts.page.blog-hero',
-            'thumbnail' => get_stylesheet_directory_uri() . '/assets/images/module-blog-hero.png',
+            'template' => \ekandreas\Papi::module_view_path(__CLASS__),
+            'thumbnail' => \ekandreas\Papi::module_thumbnail_path(__CLASS__),
         ];
     }
 
