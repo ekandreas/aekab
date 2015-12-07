@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d5c535f91fb184d58f82f19d9edf611a",
-    "content-hash": "dab3f15abdbf6fa47b1fb21a794acedb",
+    "hash": "7dc01921fb85dcd04a161ddf1db6dab3",
+    "content-hash": "1bf96e75e0b304c8312a4da6b053f2b5",
     "packages": [
         {
             "name": "composer/installers",
@@ -2017,6 +2017,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/oembed-gist/"
+        },
+        {
+            "name": "wpackagist-plugin/polylang",
+            "version": "1.7.12",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/polylang/",
+                "reference": "tags/1.7.12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/polylang.1.7.12.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/polylang/"
         },
         {
             "name": "wpackagist-plugin/varnish-http-purge",

@@ -46,7 +46,8 @@
     "wpackagist-plugin/oembed-gist":"*",
     "wpackagist-plugin/blade": "*",
     "roots/soil": "^3.6",
-    "wpackagist-plugin/varnish-http-purge": "*"
+    "wpackagist-plugin/varnish-http-purge": "*",
+    "wpackagist-plugin/polylang": "*"
   },
   "extra": {
     "installer-paths": {
