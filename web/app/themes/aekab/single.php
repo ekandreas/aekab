@@ -18,6 +18,6 @@
 
 	@endif
 
-	@include('views.parts.payoff')
+	@include('views.modules.payoff')
 
 @endsection
