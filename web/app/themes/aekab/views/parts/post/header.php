@@ -2,7 +2,7 @@
   <div class="articleherowrapper">
     <div class="w-container">
       <div class="articlebreadcrumbdiv"><a href="/" class="breadcrumblink">Startsida</a>
-        <div class="breadcrumblink">/</div><a href="/blogg" class="breadcrumblink">blogg</a>
+        <div class="breadcrumblink">/</div><a href="/blogg" class="breadcrumblink">Blogg</a>
         <div class="breadcrumblink">/</div>
         <div class="breadcrumblink">{{ the_title() }}</div>
       </div>
