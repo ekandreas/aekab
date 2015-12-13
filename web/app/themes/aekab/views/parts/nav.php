@@ -20,7 +20,7 @@
                     'echo' => false,
                 ]);
 
-				echo preg_replace( '/<li class.*?>(.*)<\/li>/', '$1', $cleanmenu );
+				        echo strip_tags( $cleanmenu, '<a><nav>' );
 
               }
 
