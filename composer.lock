@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7dc01921fb85dcd04a161ddf1db6dab3",
-    "content-hash": "1bf96e75e0b304c8312a4da6b053f2b5",
+    "hash": "e29f082b97f564ec28ad7fc8060f1077",
+    "content-hash": "c5a9a2cba29cb82df30beb06e05bd60b",
     "packages": [
         {
             "name": "composer/installers",
@@ -521,16 +521,16 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.3.1",
+            "version": "4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "cfcf25eb42baeb7316a61c7a64e9a1ab3e291f2f"
+                "reference": "ad70e5cf518b697eed94f558ca6c88e5cc87e65b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/cfcf25eb42baeb7316a61c7a64e9a1ab3e291f2f",
-                "reference": "cfcf25eb42baeb7316a61c7a64e9a1ab3e291f2f",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/ad70e5cf518b697eed94f558ca6c88e5cc87e65b",
+                "reference": "ad70e5cf518b697eed94f558ca6c88e5cc87e65b",
                 "shasum": ""
             },
             "require": {
@@ -554,7 +554,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2015-09-15 15:01:23"
+            "time": "2015-12-08 23:46:14"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -1890,16 +1890,16 @@
         },
         {
             "name": "wp-papi/papi",
-            "version": "v2.4.9",
+            "version": "v2.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-papi/papi.git",
-                "reference": "0aff108e3342ec2689d5e8ccccfac594b6b3a27b"
+                "reference": "6832262c4561f5e03bea99b42c191f25eac85746"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-papi/papi/zipball/0aff108e3342ec2689d5e8ccccfac594b6b3a27b",
-                "reference": "0aff108e3342ec2689d5e8ccccfac594b6b3a27b",
+                "url": "https://api.github.com/repos/wp-papi/papi/zipball/6832262c4561f5e03bea99b42c191f25eac85746",
+                "reference": "6832262c4561f5e03bea99b42c191f25eac85746",
                 "shasum": ""
             },
             "require": {
@@ -1936,7 +1936,7 @@
                 "page type",
                 "wordpress"
             ],
-            "time": "2015-11-30 14:30:54"
+            "time": "2015-12-08 09:58:16"
         },
         {
             "name": "wpackagist-plugin/blade",
