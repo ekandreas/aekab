@@ -480,16 +480,16 @@
         },
         {
             "name": "johnbillion/extended-cpts",
-            "version": "2.5.2",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnbillion/extended-cpts.git",
-                "reference": "ae413c1eaf590ae29b2b27b66dc3ed974361194a"
+                "reference": "70db1856a6ddc8278ed5ba8e63472dd6f446add2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnbillion/extended-cpts/zipball/ae413c1eaf590ae29b2b27b66dc3ed974361194a",
-                "reference": "ae413c1eaf590ae29b2b27b66dc3ed974361194a",
+                "url": "https://api.github.com/repos/johnbillion/extended-cpts/zipball/70db1856a6ddc8278ed5ba8e63472dd6f446add2",
+                "reference": "70db1856a6ddc8278ed5ba8e63472dd6f446add2",
                 "shasum": ""
             },
             "require": {
@@ -497,14 +497,15 @@
                 "php": ">=5.4"
             },
             "require-dev": {
+                "phpdocumentor/reflection-docblock": "~2.0",
                 "phpunit/phpunit": ">=3.7",
-                "satooshi/php-coveralls": "dev-master"
+                "satooshi/php-coveralls": ">=0.7.0"
             },
             "suggest": {
                 "johnbillion/extended-taxos": "Extended Taxonomies",
                 "wpackagist-plugin/rewrite-testing": "Rewrite Rule Testing"
             },
-            "type": "wordpress-plugin",
+            "type": "library",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0+"
@@ -517,7 +518,7 @@
             ],
             "description": "A library which provides extended functionality to WordPress custom post types, allowing developers to quickly build custom post types without having to write the same code again and again.",
             "homepage": "https://github.com/johnbillion/extended-cpts/",
-            "time": "2015-11-27 23:20:53"
+            "time": "2015-12-20 07:08:09"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -1382,16 +1383,16 @@
         },
         {
             "name": "roots/soil",
-            "version": "3.6.0",
+            "version": "3.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/soil.git",
-                "reference": "c9e224facb851011284c3ea925980d988473fb3f"
+                "reference": "8b534d4b271033d22b8fa0d055c740f7f9c4ca58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roots/soil/zipball/c9e224facb851011284c3ea925980d988473fb3f",
-                "reference": "c9e224facb851011284c3ea925980d988473fb3f",
+                "url": "https://api.github.com/repos/roots/soil/zipball/8b534d4b271033d22b8fa0d055c740f7f9c4ca58",
+                "reference": "8b534d4b271033d22b8fa0d055c740f7f9c4ca58",
                 "shasum": ""
             },
             "require": {
@@ -1420,7 +1421,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2015-11-19 04:59:49"
+            "time": "2015-12-24 19:42:34"
         },
         {
             "name": "seld/jsonlint",
@@ -1470,16 +1471,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.8.0",
+            "version": "v2.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "d232bfc100dfd32b18ccbcab4bcc8f28697b7e41"
+                "reference": "2e06a5ccb19dcf9b89f1c6a677a39a8df773635a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/d232bfc100dfd32b18ccbcab4bcc8f28697b7e41",
-                "reference": "d232bfc100dfd32b18ccbcab4bcc8f28697b7e41",
+                "url": "https://api.github.com/repos/symfony/console/zipball/2e06a5ccb19dcf9b89f1c6a677a39a8df773635a",
+                "reference": "2e06a5ccb19dcf9b89f1c6a677a39a8df773635a",
                 "shasum": ""
             },
             "require": {
@@ -1526,20 +1527,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2015-11-30 12:35:10"
+            "time": "2015-12-22 10:25:57"
         },
         {
             "name": "symfony/debug",
-            "version": "v2.8.0",
+            "version": "v2.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "d371ecb85254a8dff7f6d843bf49d1197e7d533e"
+                "reference": "83e51a0e8940ed5e85788ba6bfa022634aa07869"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/d371ecb85254a8dff7f6d843bf49d1197e7d533e",
-                "reference": "d371ecb85254a8dff7f6d843bf49d1197e7d533e",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/83e51a0e8940ed5e85788ba6bfa022634aa07869",
+                "reference": "83e51a0e8940ed5e85788ba6bfa022634aa07869",
                 "shasum": ""
             },
             "require": {
@@ -1583,11 +1584,11 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2015-11-27 05:45:55"
+            "time": "2015-12-26 13:37:56"
         },
         {
             "name": "symfony/expression-language",
-            "version": "v2.8.0",
+            "version": "v2.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/expression-language.git",
@@ -1636,16 +1637,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v2.8.0",
+            "version": "v2.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "ead9b07af4ba77b6507bee697396a5c79e633f08"
+                "reference": "dd41ae57f4f737be271d944a0cc5f5f21203a7c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/ead9b07af4ba77b6507bee697396a5c79e633f08",
-                "reference": "ead9b07af4ba77b6507bee697396a5c79e633f08",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/dd41ae57f4f737be271d944a0cc5f5f21203a7c6",
+                "reference": "dd41ae57f4f737be271d944a0cc5f5f21203a7c6",
                 "shasum": ""
             },
             "require": {
@@ -1681,24 +1682,27 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2015-10-30 20:15:42"
+            "time": "2015-12-05 11:09:21"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "0b6a8940385311a24e060ec1fe35680e17c74497"
+                "reference": "49ff736bd5d41f45240cec77b44967d76e0c3d25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/0b6a8940385311a24e060ec1fe35680e17c74497",
-                "reference": "0b6a8940385311a24e060ec1fe35680e17c74497",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/49ff736bd5d41f45240cec77b44967d76e0c3d25",
+                "reference": "49ff736bd5d41f45240cec77b44967d76e0c3d25",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
             },
             "type": "library",
             "extra": {
@@ -1737,20 +1741,20 @@
                 "portable",
                 "shim"
             ],
-            "time": "2015-11-04 20:28:58"
+            "time": "2015-11-20 09:19:13"
         },
         {
             "name": "symfony/process",
-            "version": "v2.8.0",
+            "version": "v2.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "1b988a88e3551102f3c2d9e1d47a18c3a78d6312"
+                "reference": "62c254438b5040bc2217156e1570cf2206e8540c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/1b988a88e3551102f3c2d9e1d47a18c3a78d6312",
-                "reference": "1b988a88e3551102f3c2d9e1d47a18c3a78d6312",
+                "url": "https://api.github.com/repos/symfony/process/zipball/62c254438b5040bc2217156e1570cf2206e8540c",
+                "reference": "62c254438b5040bc2217156e1570cf2206e8540c",
                 "shasum": ""
             },
             "require": {
@@ -1786,20 +1790,20 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2015-11-30 12:35:10"
+            "time": "2015-12-23 11:03:46"
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.8.0",
+            "version": "v2.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "f79824187de95064a2f5038904c4d7f0227fedb5"
+                "reference": "ac84cbb98b68a6abbc9f5149eb96ccc7b07b8966"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/f79824187de95064a2f5038904c4d7f0227fedb5",
-                "reference": "f79824187de95064a2f5038904c4d7f0227fedb5",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/ac84cbb98b68a6abbc9f5149eb96ccc7b07b8966",
+                "reference": "ac84cbb98b68a6abbc9f5149eb96ccc7b07b8966",
                 "shasum": ""
             },
             "require": {
@@ -1835,32 +1839,32 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2015-11-30 12:35:10"
+            "time": "2015-12-26 13:37:56"
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v2.1.0",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "c10040e0df17d2ee88e9212b50cbe9319e878f59"
+                "reference": "9caf304153dc2288e4970caec6f1f3b3bc205412"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/c10040e0df17d2ee88e9212b50cbe9319e878f59",
-                "reference": "c10040e0df17d2ee88e9212b50cbe9319e878f59",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/9caf304153dc2288e4970caec6f1f3b3bc205412",
+                "reference": "9caf304153dc2288e4970caec6f1f3b3bc205412",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.9"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.0"
+                "phpunit/phpunit": "^4.8|^5.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 }
             },
             "autoload": {
@@ -1886,7 +1890,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2015-10-28 18:53:35"
+            "time": "2015-12-29 15:10:30"
         },
         {
             "name": "wp-papi/papi",
@@ -2213,16 +2217,16 @@
         },
         {
             "name": "yoast/wordpress-seo",
-            "version": "3.0.6",
+            "version": "3.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Yoast/wordpress-seo.git",
-                "reference": "84738399e12fa36bd0958bc287ab462c8a7e6e98"
+                "reference": "03156d3f045039cacb773ae56634766015328542"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Yoast/wordpress-seo/zipball/84738399e12fa36bd0958bc287ab462c8a7e6e98",
-                "reference": "84738399e12fa36bd0958bc287ab462c8a7e6e98",
+                "url": "https://api.github.com/repos/Yoast/wordpress-seo/zipball/03156d3f045039cacb773ae56634766015328542",
+                "reference": "03156d3f045039cacb773ae56634766015328542",
                 "shasum": ""
             },
             "require": {
@@ -2262,7 +2266,7 @@
                 "seo",
                 "wordpress"
             ],
-            "time": "2015-12-01 15:43:16"
+            "time": "2015-12-23 10:19:52"
         }
     ],
     "packages-dev": [],

@@ -7,6 +7,10 @@ class Cpt
     {
         add_action( 'init', function () {
 
+            if( !function_exists('register_extended_post_type') ) {
+                include_once( $_SERVER['DOCUMENT_ROOT'] . '/../vendor/johnbillion/extended-cpts/extended-cpts.php');
+            }
+            
             if( function_exists('register_extended_post_type') ) {
 
                 register_extended_post_type( 'module', [
