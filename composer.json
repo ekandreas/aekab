@@ -44,10 +44,11 @@
     "johnbillion/extended-cpts": "*",
     "wpackagist-plugin/google-sitemap-generator":"*",
     "wpackagist-plugin/oembed-gist":"*",
-    "wpackagist-plugin/blade": "*",
     "roots/soil": "^3.6",
     "wpackagist-plugin/varnish-http-purge": "*",
-    "wpackagist-plugin/polylang": "*"
+    "wpackagist-plugin/polylang": "*",
+    "ekandreas/dipwpe": "*",
+    "ekandreas/bladerunner": "*"
   },
   "extra": {
     "installer-paths": {

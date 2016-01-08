@@ -1,4 +1,4 @@
-@layout('views.layouts.master')
+@extends('views.layouts.master')
 
 @section('main')
 

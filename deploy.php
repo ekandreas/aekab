@@ -2,7 +2,15 @@
 date_default_timezone_set('Europe/Stockholm');
 
 include_once 'vendor/deployer/deployer/recipe/common.php';
-include_once 'pull.php';
+include_once 'vendor/ekandreas/dipwpe/main.php';
+
+env('remote.name','aekab');
+env('remote.path','/mnt/persist/www/aekab.se');
+env('remote.ssh','root@andreasek.se');
+env('remote.database','aekab');
+env('remote.domain','aekab.se');
+env('local.domain','aekab.dev');
+env('local.is_elastic',false);
 
 server( 'development', 'aekab.dev', 22 )
     ->env('deploy_path','/var/www/aekab')

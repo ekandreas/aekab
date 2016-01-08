@@ -10,15 +10,13 @@
       <div class="w-row">
 
       @if( $module->posts )
-        <?php $posts = json_decode($module->posts,true) ?>
-        @foreach( $posts as $p )
-          <?php $post = get_post($p['id']); ?>
+        @foreach( $module->posts as $post )
 
           <div class="w-col w-col-4">
             <div class="puffwrapper">
-              @if( papi_get_page_type_id() == 'blog-post' )
+              @if( papi_get_page_type_id( $post->ID ) == 'blog-post' )
               <div class="w-clearfix puffheader puffheaderbrown">
-              @elseif( papi_get_page_type_id() == 'portfolio-post' )
+              @elseif( papi_get_page_type_id($post->ID ) == 'portfolio-post' )
               <div class="w-clearfix puffheader puffheaderpurple">
               @else
               <div class="w-clearfix puffheader">
@@ -26,9 +24,9 @@
                 <div class="w-clearfix puffheaderleft">
                   <div class="puffheaderleftinsideleft">
               
-                  @if( papi_get_page_type_id() == 'blog-post' )
+                  @if( papi_get_page_type_id( $post->ID ) == 'blog-post' )
                         <div class="puffheadernumbers">{{ __('BLOGGPOST','AEKAB' ) }}</div>
-                  @elseif( papi_get_page_type_id() == 'portfolio-post' )
+                  @elseif( papi_get_page_type_id( $post->ID ) == 'portfolio-post' )
                         <div class="puffheadernumbers">{{ __('UPPDRAG','AEKAB' ) }}</div>
                   @else
                         <div class="puffheadernumbers">{{ __('NYHET','AEKAB' ) }}</div>
@@ -52,7 +50,7 @@
                     <div class="puffbtntext">Läs mer</div>
                   </a>
                 </div>
-                <div class="puffcontentdiv"><a href="{{ the_permalink() }}" class="w-inline-block startpagepuffclickarea"><h3 class="puffheadline">{{ the_title() }}</h3><p class="puffbread">{{ get_post_excerpt() }}</p></a>
+                <div class="puffcontentdiv"><a href="{{ the_permalink() }}" class="w-inline-block startpagepuffclickarea"><h3 class="puffheadline">{{ get_the_title( $post->ID ) }}</h3><p class="puffbread">{!! get_post_excerpt( $post->ID ) !!}</p></a>
                 </div>
               </div>
             </div>

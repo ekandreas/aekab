@@ -20,8 +20,8 @@ class Cpt
                     'show_in_feed' => false,
                     'supports' => array( 'title', 'editor', 'thumbnail' ),
                 ], [
-                    'singular' => __('Modul','orasolv'),
-                    'plural'   => __('Moduler','orasolv'),
+                    'singular' => __('Modul','aekab'),
+                    'plural'   => __('Moduler','aekab'),
                 ] );
             }
 

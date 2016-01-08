@@ -13,7 +13,7 @@
 
 				@while( have_posts() )
 					
-					<?php the_post(); ?>
+					{{ the_post() }}
 
 					@include('views.parts.post.pusher')
 

@@ -22,6 +22,6 @@
     <meta property="og:image" content="{{ ekandreas\Assets\asset_path('assets/images/aekab-symbol.png')  }}" /> 
   @endif
 
-  <?php wp_head() ?>
+  {{ wp_head() }}
 
 </head>
