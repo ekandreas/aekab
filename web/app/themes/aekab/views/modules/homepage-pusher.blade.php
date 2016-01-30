@@ -43,23 +43,24 @@
                   </div>
                 </div>
                 <div class="puffbggradient">
-                  @if( has_post_thumbnail() )
+                  @if( has_post_thumbnail($post->ID) )
                     <img src="{{ wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' )[0] }}" class="puff-pic" width="300" height="154" />
                   @endif
-                  <a href="{{ the_permalink() }}" class="w-inline-block puffbtn">
+                  <a href="{{ the_permalink($post->ID) }}" class="w-inline-block puffbtn">
                     <div class="puffbtntext">Läs mer</div>
                   </a>
                 </div>
-                <div class="puffcontentdiv"><a href="{{ the_permalink() }}" class="w-inline-block startpagepuffclickarea"><h3 class="puffheadline">{{ get_the_title( $post->ID ) }}</h3><p class="puffbread">{!! get_post_excerpt( $post->ID ) !!}</p></a>
+                <div class="puffcontentdiv"><a href="{{ the_permalink($post->ID) }}" class="w-inline-block startpagepuffclickarea"><h3 class="puffheadline">{{ get_the_title( $post->ID ) }}</h3><p class="puffbread">{!! get_post_excerpt( $post->ID ) !!}</p></a>
                 </div>
               </div>
             </div>
           </div>
 
 
-          @endforeach
-            <?php wp_reset_postdata(); ?>
+            @endforeach
           @endif
+
+          <?php wp_reset_postdata(); ?>
             
 
         </div>

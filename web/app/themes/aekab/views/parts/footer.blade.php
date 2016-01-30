@@ -7,7 +7,7 @@
           </p>
           <div class="w-clearfix footersharediv">
             <div class="footerheartbox">
-              <div class="footerheartnumber">Code is Poetry</div>
+              <div class="footerheartnumber">Code</div>
             </div>
           </div>
         </div>
@@ -15,12 +15,10 @@
           <div class="w-hidden-small w-hidden-tiny footerrightbox">
             <h3 class="footerh3">{{ papi_get_option('footer_link1_text') }}</h3>
             <ul class="w-list-unstyled footerlinklist">
-              <?php $links = papi_get_option('footer_link1_links') ?>
-              @if( $links )
+              @if( $links = papi_get_option('footer_link1_links') )
                 @foreach( $links as $link )
-                  <?php $link = $link['link']; ?>
                   <li>
-                    <a target="{{ $link->target }}" href="{{ $link->url }}" class="footerlistlink">{{ $link->title }}</a>
+                    <a target="{{ $link['link']->target }}" href="{{ $link['link']->url }}" class="footerlistlink">{{ $link['link']->title }}</a>
                   </li>
                 @endforeach
               @endif
@@ -29,7 +27,7 @@
           <div class="w-hidden-small w-hidden-tiny footerrightbox">
             <h3 class="footerh3">{{ papi_get_option('footer_contact_headline') }}</h3>
             <p class="footerdata">
-              {{ str_replace("\n","<br/>", papi_get_option('footer_contact_text1') ) }}
+              {!! str_replace("\n","<br/>", papi_get_option('footer_contact_text1') ) !!}
             </p>
           </div>
         </div>
@@ -37,12 +35,10 @@
           <div class="w-hidden-small w-hidden-tiny footerrightbox">
             <h3 class="footerh3">{{ papi_get_option('footer_link2_text') }}</h3>
             <ul class="w-list-unstyled footerlinklist">
-              <?php $links = papi_get_option('footer_link2_links') ?>
-              @if( $links )
+              @if( $links = papi_get_option('footer_link2_links') )
                 @foreach( $links as $link )
-                  <?php $link = $link['link']; ?>
                   <li>
-                    <a target="{{ $link->target }}" href="{{ $link->url }}" class="footerlistlink">{{ $link->title }}</a>
+                    <a target="{{ $link['link']->target }}" href="{{ $link['link']->url }}" class="footerlistlink">{{ $link['link']->title }}</a>
                   </li>
                 @endforeach
               @endif
@@ -51,7 +47,7 @@
           <div class="w-hidden-small w-hidden-tiny footerrightbox">
             <h3 class="footerh3 footerh3hide">&nbsp;</h3>
             <p class="w-hidden-small w-hidden-tiny footerdata">
-              {{ str_replace("\n","<br/>", papi_get_option('footer_contact_text2') ) }}
+              {!! str_replace("\n","<br/>", papi_get_option('footer_contact_text2') ) !!}
             </p>
           </div>
         </div>

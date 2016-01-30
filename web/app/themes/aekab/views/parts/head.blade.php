@@ -16,8 +16,8 @@
   <link rel="shortcut icon" type="image/x-icon" href="{{ ekandreas\Assets\asset_path('images/logo32.png') }}">
   <link rel="apple-touch-icon" href="{{ ekandreas\Assets\asset_path('images/logo256.png') }}">
 
-  @if( has_post_thumbnail() )
-    <meta property="og:image" content="{{ wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' )[0] }}" /> 
+  @if( has_post_thumbnail(get_the_ID()) )
+    <meta property="og:image" content="{{ wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'medium' )[0] }}" /> 
   @else
     <meta property="og:image" content="{{ ekandreas\Assets\asset_path('assets/images/aekab-symbol.png')  }}" /> 
   @endif

@@ -9,6 +9,7 @@ class Papi
             $directories[] = dirname(__FILE__) . '/page-types';
             return $directories;
         } );
+
     }
 
     static function is_papi_page() {
@@ -30,7 +31,6 @@ class Papi
         $result = get_stylesheet_directory_uri() . "/assets/images/modules/$class.png";
         return $result;
     }
-
 
 }
 

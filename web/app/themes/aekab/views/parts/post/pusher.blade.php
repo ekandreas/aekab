@@ -1,10 +1,8 @@
-
-
           <div class="w-clearfix blogpuffdiv">
             <div class="blogpufffleft">
 
               @if( has_post_thumbnail() )
-                <img height="200" alt="BloggPuffPic" src="{{ wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' )[0] }}" class="bloggpuffpic" />
+                <img height="200" alt="BloggPuffPic" src="{{ wp_get_attachment_image_src( get_post_thumbnail_id(), 'medium' )[0] }}" class="bloggpuffpic" />
               @endif
 
               <div class="blogpufftooldiv">
@@ -45,7 +43,7 @@
               </div>
               <a href="{{ get_the_permalink() }}" class="w-inline-block blogpuffclickarea"><h3 class="blogpuffheadline">{{the_title()}}</h3>
                 <p class="blogpuffbody">
-                  {{ get_post_excerpt() }}                
+                  {!! get_post_excerpt() !!}                
                 </p>
               </a>
             </div>

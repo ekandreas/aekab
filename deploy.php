@@ -1,6 +1,7 @@
 <?php
 date_default_timezone_set('Europe/Stockholm');
 
+include_once 'vendor/ekandreas/docker-bedrock/recipe.php';
 include_once 'vendor/deployer/deployer/recipe/common.php';
 include_once 'vendor/ekandreas/dipwpe/main.php';
 
@@ -12,11 +13,9 @@ env('remote.domain','aekab.se');
 env('local.domain','aekab.dev');
 env('local.is_elastic',false);
 
-server( 'development', 'aekab.dev', 22 )
-    ->env('deploy_path','/var/www/aekab')
-    ->env('branch', 'master')
-    ->stage('development')
-    ->user( 'vagrant', 'vagrant' );
+server( 'development', 'default', 22 )
+    ->env('container','aekab')
+    ->env('deploy_path','/var/www/aekab');
 
 server( 'production', 'andreasek.se', 22 )
     ->env('deploy_path','/mnt/persist/www/aekab.se')

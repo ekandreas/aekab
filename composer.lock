@@ -4,25 +4,25 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0a1d3feb0d5f366da67e5ad885f66251",
-    "content-hash": "57a29b7afda044753222514f197b0861",
+    "hash": "a8ad50f24566ebcd7b96980b959d39a0",
+    "content-hash": "69bd9446123b810163a0bff43b6a2306",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.0.22",
+            "version": "v1.0.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046"
+                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/bd9b14f094c89c8b5804a4e41edeb7853bb85046",
-                "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046",
+                "url": "https://api.github.com/repos/composer/installers/zipball/6213d900e92647831f7a406d5c530ea1f3d4360e",
+                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "1.0.0"
+                "composer-plugin-api": "^1.0"
             },
             "replace": {
                 "roundcube/plugin-installer": "*",
@@ -103,61 +103,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2015-10-29 23:28:48"
-        },
-        {
-            "name": "deployer/deployer",
-            "version": "v3.0.10",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/deployphp/deployer.git",
-                "reference": "76c6221e51ba9bd4a07f190ca37ca212e4c4c2d7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/deployphp/deployer/zipball/76c6221e51ba9bd4a07f190ca37ca212e4c4c2d7",
-                "reference": "76c6221e51ba9bd4a07f190ca37ca212e4c4c2d7",
-                "shasum": ""
-            },
-            "require": {
-                "elfet/pure": "~1.1",
-                "kherge/amend": "~3.0",
-                "php": ">=5.4.0",
-                "phpseclib/phpseclib": "~2.0",
-                "symfony/console": "~2.6",
-                "symfony/finder": "~2.6",
-                "symfony/process": "~2.6",
-                "symfony/yaml": "~2.6"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.5"
-            },
-            "suggest": {
-                "ext-sockets": "For parallel deployment",
-                "herzult/php-ssh": "For SSH support through native SSH2 extension"
-            },
-            "bin": [
-                "bin/dep"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Deployer\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Anton Medvedev",
-                    "email": "anton@elfet.ru"
-                }
-            ],
-            "description": "Deployment Tool",
-            "homepage": "http://deployer.org",
-            "time": "2015-09-02 06:44:10"
+            "time": "2016-01-27 12:54:22"
         },
         {
             "name": "doctrine/inflector",
@@ -228,22 +174,27 @@
         },
         {
             "name": "ekandreas/bladerunner",
-            "version": "0.9",
+            "version": "1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ekandreas/bladerunner.git",
-                "reference": "cbff07496befc36ad2c0f06ef3c19d604870efe9"
+                "reference": "3dfa68eeb43c0ca13504e935a0dd6b941a81464d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ekandreas/bladerunner/zipball/cbff07496befc36ad2c0f06ef3c19d604870efe9",
-                "reference": "cbff07496befc36ad2c0f06ef3c19d604870efe9",
+                "url": "https://api.github.com/repos/ekandreas/bladerunner/zipball/3dfa68eeb43c0ca13504e935a0dd6b941a81464d",
+                "reference": "3dfa68eeb43c0ca13504e935a0dd6b941a81464d",
                 "shasum": ""
             },
             "require": {
                 "illuminate/events": "5.2.*",
                 "illuminate/view": "5.2.*",
                 "php": ">=5.5"
+            },
+            "require-dev": {
+                "deployer/deployer": "*",
+                "ekandreas/testrunner": "dev-master",
+                "frozzare/wp-test-suite": "^1.0"
             },
             "type": "wordpress-plugin",
             "notification-url": "https://packagist.org/downloads/",
@@ -262,348 +213,7 @@
                 "laravel",
                 "wordpress"
             ],
-            "time": "2016-01-08 14:52:59"
-        },
-        {
-            "name": "ekandreas/dipwpe",
-            "version": "0.4.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ekandreas/dipwpe.git",
-                "reference": "02ea5ef111adc65d2d8b4784f35467595c359506"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ekandreas/dipwpe/zipball/02ea5ef111adc65d2d8b4784f35467595c359506",
-                "reference": "02ea5ef111adc65d2d8b4784f35467595c359506",
-                "shasum": ""
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Deployment recipe",
-            "time": "2016-01-07 14:48:29"
-        },
-        {
-            "name": "elfet/pure",
-            "version": "v1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/elfet/purephp.git",
-                "reference": "e498a42ad7d3c4d9d6ff3fa0babe90dfe3262a2c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/elfet/purephp/zipball/e498a42ad7d3c4d9d6ff3fa0babe90dfe3262a2c",
-                "reference": "e498a42ad7d3c4d9d6ff3fa0babe90dfe3262a2c",
-                "shasum": ""
-            },
-            "require": {
-                "react/react": "~0.4",
-                "symfony/console": "~2.6",
-                "symfony/debug": "~2.6",
-                "symfony/expression-language": "~2.6"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.4",
-                "symfony/finder": "~2.6",
-                "symfony/process": "~2.6"
-            },
-            "bin": [
-                "pure"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Pure\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Anton Medvedev",
-                    "email": "anton@elfet.ru"
-                }
-            ],
-            "description": "Pure PHP key-value storage",
-            "time": "2015-01-02 14:35:56"
-        },
-        {
-            "name": "evenement/evenement",
-            "version": "v2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/igorw/evenement.git",
-                "reference": "f6e843799fd4f4184d54d8fc7b5b3551c9fa803e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/igorw/evenement/zipball/f6e843799fd4f4184d54d8fc7b5b3551c9fa803e",
-                "reference": "f6e843799fd4f4184d54d8fc7b5b3551c9fa803e",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Evenement": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Igor Wiedler",
-                    "email": "igor@wiedler.ch",
-                    "homepage": "http://wiedler.ch/igor/"
-                }
-            ],
-            "description": "Événement is a very simple event dispatching library for PHP",
-            "keywords": [
-                "event-dispatcher",
-                "event-emitter"
-            ],
-            "time": "2012-11-02 14:49:47"
-        },
-        {
-            "name": "guzzlehttp/psr7",
-            "version": "1.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/psr7.git",
-                "reference": "4d0bdbe1206df7440219ce14c972aa57cc5e4982"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/4d0bdbe1206df7440219ce14c972aa57cc5e4982",
-                "reference": "4d0bdbe1206df7440219ce14c972aa57cc5e4982",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0",
-                "psr/http-message": "~1.0"
-            },
-            "provide": {
-                "psr/http-message-implementation": "1.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Psr7\\": "src/"
-                },
-                "files": [
-                    "src/functions_include.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                }
-            ],
-            "description": "PSR-7 message implementation",
-            "keywords": [
-                "http",
-                "message",
-                "stream",
-                "uri"
-            ],
-            "time": "2015-11-03 01:34:55"
-        },
-        {
-            "name": "herrera-io/json",
-            "version": "1.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kherge-abandoned/php-json.git",
-                "reference": "60c696c9370a1e5136816ca557c17f82a6fa83f1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kherge-abandoned/php-json/zipball/60c696c9370a1e5136816ca557c17f82a6fa83f1",
-                "reference": "60c696c9370a1e5136816ca557c17f82a6fa83f1",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "justinrainbow/json-schema": ">=1.0,<2.0-dev",
-                "php": ">=5.3.3",
-                "seld/jsonlint": ">=1.0,<2.0-dev"
-            },
-            "require-dev": {
-                "herrera-io/phpunit-test-case": "1.*",
-                "mikey179/vfsstream": "1.1.0",
-                "phpunit/phpunit": "3.7.*"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0-dev"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/lib/json_version.php"
-                ],
-                "psr-0": {
-                    "Herrera\\Json": "src/lib"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Kevin Herrera",
-                    "email": "kevin@herrera.io",
-                    "homepage": "http://kevin.herrera.io"
-                }
-            ],
-            "description": "A library for simplifying JSON linting and validation.",
-            "homepage": "http://herrera-io.github.com/php-json",
-            "keywords": [
-                "json",
-                "lint",
-                "schema",
-                "validate"
-            ],
-            "time": "2013-10-30 16:51:34"
-        },
-        {
-            "name": "herrera-io/phar-update",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kherge-abandoned/php-phar-update.git",
-                "reference": "15643c90d3d43620a4f45c910e6afb7a0ad4b488"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kherge-abandoned/php-phar-update/zipball/15643c90d3d43620a4f45c910e6afb7a0ad4b488",
-                "reference": "15643c90d3d43620a4f45c910e6afb7a0ad4b488",
-                "shasum": ""
-            },
-            "require": {
-                "herrera-io/json": "1.*",
-                "herrera-io/version": "1.*",
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "herrera-io/phpunit-test-case": "1.*",
-                "mikey179/vfsstream": "1.1.0",
-                "phpunit/phpunit": "3.7.*"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0-dev"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/lib/constants.php"
-                ],
-                "psr-0": {
-                    "Herrera\\Phar\\Update": "src/lib"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Kevin Herrera",
-                    "email": "kevin@herrera.io",
-                    "homepage": "http://kevin.herrera.io"
-                }
-            ],
-            "description": "A library for self-updating Phars.",
-            "homepage": "http://herrera-io.github.com/php-phar-update",
-            "keywords": [
-                "phar",
-                "update"
-            ],
-            "time": "2013-11-09 17:13:13"
-        },
-        {
-            "name": "herrera-io/version",
-            "version": "1.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kherge-abandoned/php-version.git",
-                "reference": "d39d9642b92a04d8b8a28b871b797a35a2545e85"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kherge-abandoned/php-version/zipball/d39d9642b92a04d8b8a28b871b797a35a2545e85",
-                "reference": "d39d9642b92a04d8b8a28b871b797a35a2545e85",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "herrera-io/phpunit-test-case": "1.*",
-                "phpunit/phpunit": "3.7.*"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Herrera\\Version": "src/lib"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Kevin Herrera",
-                    "email": "kevin@herrera.io",
-                    "homepage": "http://kevin.herrera.io"
-                }
-            ],
-            "description": "A library for creating, editing, and comparing semantic versioning numbers.",
-            "homepage": "http://github.com/herrera-io/php-version",
-            "keywords": [
-                "semantic",
-                "version"
-            ],
-            "time": "2014-05-27 05:29:25"
+            "time": "2016-01-29 10:20:30"
         },
         {
             "name": "illuminate/container",
@@ -1016,21 +626,953 @@
             "time": "2015-06-11 15:15:30"
         },
         {
-            "name": "justinrainbow/json-schema",
-            "version": "v1.6.0",
+            "name": "roots/soil",
+            "version": "3.6.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/justinrainbow/json-schema.git",
-                "reference": "f9e27c3e202faf14fd581ef41355d83bb4b7eb7d"
+                "url": "https://github.com/roots/soil.git",
+                "reference": "8b534d4b271033d22b8fa0d055c740f7f9c4ca58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/f9e27c3e202faf14fd581ef41355d83bb4b7eb7d",
-                "reference": "f9e27c3e202faf14fd581ef41355d83bb4b7eb7d",
+                "url": "https://api.github.com/repos/roots/soil/zipball/8b534d4b271033d22b8fa0d055c740f7f9c4ca58",
+                "reference": "8b534d4b271033d22b8fa0d055c740f7f9c4ca58",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2"
+                "composer/installers": "~1.0",
+                "php": ">=5.4.0"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Scott Walkinshaw",
+                    "email": "scott.walkinshaw@gmail.com",
+                    "homepage": "https://github.com/swalkinshaw"
+                },
+                {
+                    "name": "Ben Word",
+                    "email": "ben@benword.com",
+                    "homepage": "https://github.com/retlehs"
+                }
+            ],
+            "description": "A WordPress plugin which contains a collection of modules to apply theme-agnostic front-end modifications",
+            "homepage": "https://roots.io/plugins/soil/",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2015-12-24 19:42:34"
+        },
+        {
+            "name": "symfony/finder",
+            "version": "v2.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/finder.git",
+                "reference": "c90fabdd97e431ee19b6383999cf35334dff27da"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/c90fabdd97e431ee19b6383999cf35334dff27da",
+                "reference": "c90fabdd97e431ee19b6383999cf35334dff27da",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.8-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Finder\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Finder Component",
+            "homepage": "https://symfony.com",
+            "time": "2016-01-14 08:26:52"
+        },
+        {
+            "name": "vlucas/phpdotenv",
+            "version": "v2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/vlucas/phpdotenv.git",
+                "reference": "9caf304153dc2288e4970caec6f1f3b3bc205412"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/9caf304153dc2288e4970caec6f1f3b3bc205412",
+                "reference": "9caf304153dc2288e4970caec6f1f3b3bc205412",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8|^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dotenv\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD"
+            ],
+            "authors": [
+                {
+                    "name": "Vance Lucas",
+                    "email": "vance@vancelucas.com",
+                    "homepage": "http://www.vancelucas.com"
+                }
+            ],
+            "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
+            "homepage": "http://github.com/vlucas/phpdotenv",
+            "keywords": [
+                "dotenv",
+                "env",
+                "environment"
+            ],
+            "time": "2015-12-29 15:10:30"
+        },
+        {
+            "name": "wp-papi/papi",
+            "version": "v2.4.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-papi/papi.git",
+                "reference": "6832262c4561f5e03bea99b42c191f25eac85746"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wp-papi/papi/zipball/6832262c4561f5e03bea99b42c191f25eac85746",
+                "reference": "6832262c4561f5e03bea99b42c191f25eac85746",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.4.7"
+            },
+            "require-dev": {
+                "frozzare/wp-test-suite": "~1.0",
+                "sebastian/phpcpd": "~2.0@dev",
+                "wp-coding-standards/wpcs": "dev-develop"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.5-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fredrik Forsmo",
+                    "email": "fredrik.forsmo@gmail.com",
+                    "homepage": "https://github.com/frozzare"
+                }
+            ],
+            "description": "WordPress Page Type API with custom fields",
+            "homepage": "https://wp-papi.github.io",
+            "keywords": [
+                "custom fields",
+                "page",
+                "page type",
+                "wordpress"
+            ],
+            "time": "2015-12-08 09:58:16"
+        },
+        {
+            "name": "wpackagist-plugin/google-analytics-for-wordpress",
+            "version": "5.4.6",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/google-analytics-for-wordpress/",
+                "reference": "tags/5.4.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-for-wordpress.5.4.6.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/google-analytics-for-wordpress/"
+        },
+        {
+            "name": "wpackagist-plugin/google-sitemap-generator",
+            "version": "4.0.8",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/google-sitemap-generator/",
+                "reference": "tags/4.0.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/google-sitemap-generator.4.0.8.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/google-sitemap-generator/"
+        },
+        {
+            "name": "wpackagist-plugin/oembed-gist",
+            "version": "2.0.3",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/oembed-gist/",
+                "reference": "tags/2.0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/oembed-gist.2.0.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/oembed-gist/"
+        },
+        {
+            "name": "wpackagist-plugin/polylang",
+            "version": "1.8",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/polylang/",
+                "reference": "tags/1.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/polylang.1.8.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/polylang/"
+        },
+        {
+            "name": "wpackagist-plugin/varnish-http-purge",
+            "version": "3.8",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/varnish-http-purge/",
+                "reference": "tags/3.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/varnish-http-purge.3.8.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/varnish-http-purge/"
+        },
+        {
+            "name": "xrstf/composer-php52",
+            "version": "v1.0.19",
+            "source": {
+                "type": "hg",
+                "url": "https://bitbucket.org/xrstf/composer-php52",
+                "reference": "9a4a9c46d0347b39bf9159815301dc66fc25324e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/xrstf/composer-php52/get/9a4a9c46d0347b39bf9159815301dc66fc25324e.zip",
+                "reference": "9a4a9c46d0347b39bf9159815301dc66fc25324e",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-default": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "xrstf\\Composer52": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "homepage": "http://www.xrstf.de/",
+            "time": "2015-10-01 14:11:58"
+        },
+        {
+            "name": "yoast/api-libs",
+            "version": "2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Yoast/api-libs.git",
+                "reference": "e7361081a1d6ae79c0b96c8363379435ea736ef8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Yoast/api-libs/zipball/e7361081a1d6ae79c0b96c8363379435ea736ef8",
+                "reference": "e7361081a1d6ae79c0b96c8363379435ea736ef8",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "class-api-libs.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Team Yoast",
+                    "email": "support@yoast.com",
+                    "homepage": "https://yoast.com"
+                }
+            ],
+            "description": "Shared API libraries for Yoast projects.",
+            "homepage": "https://github.com/Yoast/api-libs",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2015-07-14 10:25:59"
+        },
+        {
+            "name": "yoast/i18n-module",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Yoast/i18n-module.git",
+                "reference": "4648918ccf8bc6da12eadf57e4bece4829af29b3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Yoast/i18n-module/zipball/4648918ccf8bc6da12eadf57e4bece4829af29b3",
+                "reference": "4648918ccf8bc6da12eadf57e4bece4829af29b3",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "i18n-module.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Team Yoast",
+                    "email": "support@yoast.com",
+                    "homepage": "https://yoast.com"
+                }
+            ],
+            "description": "Handle i18n for WordPress plugins.",
+            "homepage": "https://github.com/Yoast/i18n-module",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2015-04-22 12:48:39"
+        },
+        {
+            "name": "yoast/license-manager",
+            "version": "1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Yoast/License-Manager.git",
+                "reference": "8caf52202bf51011686e31c9a43b18731047f1be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Yoast/License-Manager/zipball/8caf52202bf51011686e31c9a43b18731047f1be",
+                "reference": "8caf52202bf51011686e31c9a43b18731047f1be",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "class-api-request.php",
+                    "class-license-manager.php",
+                    "class-plugin-license-manager.php",
+                    "class-plugin-update-manager.php",
+                    "class-product.php",
+                    "class-theme-license-manager.php",
+                    "class-theme-update-manager.php",
+                    "class-update-manager.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Team Yoast",
+                    "email": "support@yoast.com",
+                    "homepage": "https://yoast.com"
+                }
+            ],
+            "description": "Yoast License Manager.",
+            "homepage": "https://github.com/Yoast/License-Manager",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2015-03-16 11:51:33"
+        },
+        {
+            "name": "yoast/wordpress-seo",
+            "version": "3.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Yoast/wordpress-seo.git",
+                "reference": "03156d3f045039cacb773ae56634766015328542"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Yoast/wordpress-seo/zipball/03156d3f045039cacb773ae56634766015328542",
+                "reference": "03156d3f045039cacb773ae56634766015328542",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "xrstf/composer-php52": "^1.0.19",
+                "yoast/api-libs": "^2.0",
+                "yoast/i18n-module": "^1.0",
+                "yoast/license-manager": "^1.2"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "yoast/yoastcs": "dev-master"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "classmap": [
+                    "admin/",
+                    "frontend/",
+                    "inc/",
+                    "deprecated/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Team Yoast",
+                    "email": "support@yoast.com",
+                    "homepage": "https://yoast.com"
+                }
+            ],
+            "description": "Improve your WordPress SEO: Write better content and have a fully optimized WordPress site using the Yoast SEO plugin.",
+            "homepage": "https://yoast.com/wordpress/plugins/seo/",
+            "keywords": [
+                "seo",
+                "wordpress"
+            ],
+            "time": "2015-12-23 10:19:52"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "deployer/deployer",
+            "version": "v3.0.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/deployphp/deployer.git",
+                "reference": "76c6221e51ba9bd4a07f190ca37ca212e4c4c2d7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/deployphp/deployer/zipball/76c6221e51ba9bd4a07f190ca37ca212e4c4c2d7",
+                "reference": "76c6221e51ba9bd4a07f190ca37ca212e4c4c2d7",
+                "shasum": ""
+            },
+            "require": {
+                "elfet/pure": "~1.1",
+                "kherge/amend": "~3.0",
+                "php": ">=5.4.0",
+                "phpseclib/phpseclib": "~2.0",
+                "symfony/console": "~2.6",
+                "symfony/finder": "~2.6",
+                "symfony/process": "~2.6",
+                "symfony/yaml": "~2.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.5"
+            },
+            "suggest": {
+                "ext-sockets": "For parallel deployment",
+                "herzult/php-ssh": "For SSH support through native SSH2 extension"
+            },
+            "bin": [
+                "bin/dep"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Deployer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anton Medvedev",
+                    "email": "anton@elfet.ru"
+                }
+            ],
+            "description": "Deployment Tool",
+            "homepage": "http://deployer.org",
+            "time": "2015-09-02 06:44:10"
+        },
+        {
+            "name": "ekandreas/dipwpe",
+            "version": "0.4.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ekandreas/dipwpe.git",
+                "reference": "66abae0f45ffaf2bc67b8feb96cb7b0fea8f1885"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ekandreas/dipwpe/zipball/66abae0f45ffaf2bc67b8feb96cb7b0fea8f1885",
+                "reference": "66abae0f45ffaf2bc67b8feb96cb7b0fea8f1885",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Deployment recipe",
+            "time": "2016-01-15 17:37:52"
+        },
+        {
+            "name": "ekandreas/docker-bedrock",
+            "version": "0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ekandreas/docker-bedrock.git",
+                "reference": "dadcef81138b845dd00488d5b8df1e918d8e5321"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ekandreas/docker-bedrock/zipball/dadcef81138b845dd00488d5b8df1e918d8e5321",
+                "reference": "dadcef81138b845dd00488d5b8df1e918d8e5321",
+                "shasum": ""
+            },
+            "require": {
+                "deployer/deployer": "~3",
+                "vlucas/phpdotenv": "~2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EkAndreas\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Ek",
+                    "email": "andreas@aekab.se"
+                }
+            ],
+            "description": "Docker environment for Roots Bedrock projects",
+            "time": "2016-01-30 22:50:54"
+        },
+        {
+            "name": "elfet/pure",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elfet/purephp.git",
+                "reference": "e498a42ad7d3c4d9d6ff3fa0babe90dfe3262a2c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elfet/purephp/zipball/e498a42ad7d3c4d9d6ff3fa0babe90dfe3262a2c",
+                "reference": "e498a42ad7d3c4d9d6ff3fa0babe90dfe3262a2c",
+                "shasum": ""
+            },
+            "require": {
+                "react/react": "~0.4",
+                "symfony/console": "~2.6",
+                "symfony/debug": "~2.6",
+                "symfony/expression-language": "~2.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.4",
+                "symfony/finder": "~2.6",
+                "symfony/process": "~2.6"
+            },
+            "bin": [
+                "pure"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Pure\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Anton Medvedev",
+                    "email": "anton@elfet.ru"
+                }
+            ],
+            "description": "Pure PHP key-value storage",
+            "time": "2015-01-02 14:35:56"
+        },
+        {
+            "name": "evenement/evenement",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/igorw/evenement.git",
+                "reference": "f6e843799fd4f4184d54d8fc7b5b3551c9fa803e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/igorw/evenement/zipball/f6e843799fd4f4184d54d8fc7b5b3551c9fa803e",
+                "reference": "f6e843799fd4f4184d54d8fc7b5b3551c9fa803e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Evenement": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Igor Wiedler",
+                    "email": "igor@wiedler.ch",
+                    "homepage": "http://wiedler.ch/igor/"
+                }
+            ],
+            "description": "Événement is a very simple event dispatching library for PHP",
+            "keywords": [
+                "event-dispatcher",
+                "event-emitter"
+            ],
+            "time": "2012-11-02 14:49:47"
+        },
+        {
+            "name": "guzzlehttp/psr7",
+            "version": "1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "f5d04bdd2881ac89abde1fb78cc234bce24327bb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/f5d04bdd2881ac89abde1fb78cc234bce24327bb",
+                "reference": "f5d04bdd2881ac89abde1fb78cc234bce24327bb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "PSR-7 message implementation",
+            "keywords": [
+                "http",
+                "message",
+                "stream",
+                "uri"
+            ],
+            "time": "2016-01-23 01:23:02"
+        },
+        {
+            "name": "herrera-io/json",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kherge-abandoned/php-json.git",
+                "reference": "60c696c9370a1e5136816ca557c17f82a6fa83f1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kherge-abandoned/php-json/zipball/60c696c9370a1e5136816ca557c17f82a6fa83f1",
+                "reference": "60c696c9370a1e5136816ca557c17f82a6fa83f1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "justinrainbow/json-schema": ">=1.0,<2.0-dev",
+                "php": ">=5.3.3",
+                "seld/jsonlint": ">=1.0,<2.0-dev"
+            },
+            "require-dev": {
+                "herrera-io/phpunit-test-case": "1.*",
+                "mikey179/vfsstream": "1.1.0",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/lib/json_version.php"
+                ],
+                "psr-0": {
+                    "Herrera\\Json": "src/lib"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Herrera",
+                    "email": "kevin@herrera.io",
+                    "homepage": "http://kevin.herrera.io"
+                }
+            ],
+            "description": "A library for simplifying JSON linting and validation.",
+            "homepage": "http://herrera-io.github.com/php-json",
+            "keywords": [
+                "json",
+                "lint",
+                "schema",
+                "validate"
+            ],
+            "time": "2013-10-30 16:51:34"
+        },
+        {
+            "name": "herrera-io/phar-update",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kherge-abandoned/php-phar-update.git",
+                "reference": "15643c90d3d43620a4f45c910e6afb7a0ad4b488"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kherge-abandoned/php-phar-update/zipball/15643c90d3d43620a4f45c910e6afb7a0ad4b488",
+                "reference": "15643c90d3d43620a4f45c910e6afb7a0ad4b488",
+                "shasum": ""
+            },
+            "require": {
+                "herrera-io/json": "1.*",
+                "herrera-io/version": "1.*",
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "herrera-io/phpunit-test-case": "1.*",
+                "mikey179/vfsstream": "1.1.0",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/lib/constants.php"
+                ],
+                "psr-0": {
+                    "Herrera\\Phar\\Update": "src/lib"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Herrera",
+                    "email": "kevin@herrera.io",
+                    "homepage": "http://kevin.herrera.io"
+                }
+            ],
+            "description": "A library for self-updating Phars.",
+            "homepage": "http://herrera-io.github.com/php-phar-update",
+            "keywords": [
+                "phar",
+                "update"
+            ],
+            "time": "2013-11-09 17:13:13"
+        },
+        {
+            "name": "herrera-io/version",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kherge-abandoned/php-version.git",
+                "reference": "d39d9642b92a04d8b8a28b871b797a35a2545e85"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kherge-abandoned/php-version/zipball/d39d9642b92a04d8b8a28b871b797a35a2545e85",
+                "reference": "d39d9642b92a04d8b8a28b871b797a35a2545e85",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "herrera-io/phpunit-test-case": "1.*",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Herrera\\Version": "src/lib"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Herrera",
+                    "email": "kevin@herrera.io",
+                    "homepage": "http://kevin.herrera.io"
+                }
+            ],
+            "description": "A library for creating, editing, and comparing semantic versioning numbers.",
+            "homepage": "http://github.com/herrera-io/php-version",
+            "keywords": [
+                "semantic",
+                "version"
+            ],
+            "time": "2014-05-27 05:29:25"
+        },
+        {
+            "name": "justinrainbow/json-schema",
+            "version": "1.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/justinrainbow/json-schema.git",
+                "reference": "cc84765fb7317f6b07bd8ac78364747f95b86341"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/cc84765fb7317f6b07bd8ac78364747f95b86341",
+                "reference": "cc84765fb7317f6b07bd8ac78364747f95b86341",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.29"
             },
             "require-dev": {
                 "json-schema/json-schema-test-suite": "1.1.0",
@@ -1043,7 +1585,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4.x-dev"
+                    "dev-master": "1.6.x-dev"
                 }
             },
             "autoload": {
@@ -1079,7 +1621,7 @@
                 "json",
                 "schema"
             ],
-            "time": "2016-01-06 14:37:04"
+            "time": "2016-01-25 15:43:01"
         },
         {
             "name": "kherge/amend",
@@ -1138,16 +1680,16 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "a74aa9efbe61430fcb60157c8e025a48ec8ff604"
+                "reference": "ba6fb78f727cd09f2a649113b95468019e490585"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/a74aa9efbe61430fcb60157c8e025a48ec8ff604",
-                "reference": "a74aa9efbe61430fcb60157c8e025a48ec8ff604",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/ba6fb78f727cd09f2a649113b95468019e490585",
+                "reference": "ba6fb78f727cd09f2a649113b95468019e490585",
                 "shasum": ""
             },
             "require": {
@@ -1163,8 +1705,7 @@
                 "ext-gmp": "Install the GMP (GNU Multiple Precision) extension in order to speed up arbitrary precision integer arithmetic operations.",
                 "ext-libsodium": "SSH2/SFTP can make use of some algorithms provided by the libsodium-php extension.",
                 "ext-mcrypt": "Install the Mcrypt extension in order to speed up a few other cryptographic operations.",
-                "ext-openssl": "Install the OpenSSL extension in order to speed up a wide variety of cryptographic operations.",
-                "pear-pear/PHP_Compat": "Install PHP_Compat to get phpseclib working on PHP < 5.0.0."
+                "ext-openssl": "Install the OpenSSL extension in order to speed up a wide variety of cryptographic operations."
             },
             "type": "library",
             "autoload": {
@@ -1173,9 +1714,6 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
-            "include-path": [
-                "phpseclib/"
-            ],
             "license": [
                 "MIT"
             ],
@@ -1198,6 +1736,11 @@
                 {
                     "name": "Hans-Jürgen Petrich",
                     "email": "petrich@tronic-media.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Graham Campbell",
+                    "email": "graham@alt-three.com",
                     "role": "Developer"
                 }
             ],
@@ -1222,7 +1765,7 @@
                 "x.509",
                 "x509"
             ],
-            "time": "2015-08-04 04:48:03"
+            "time": "2016-01-18 17:07:21"
         },
         {
             "name": "psr/http-message",
@@ -1792,48 +2335,6 @@
             "time": "2015-10-07 18:32:58"
         },
         {
-            "name": "roots/soil",
-            "version": "3.6.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/roots/soil.git",
-                "reference": "8b534d4b271033d22b8fa0d055c740f7f9c4ca58"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/roots/soil/zipball/8b534d4b271033d22b8fa0d055c740f7f9c4ca58",
-                "reference": "8b534d4b271033d22b8fa0d055c740f7f9c4ca58",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "~1.0",
-                "php": ">=5.4.0"
-            },
-            "type": "wordpress-plugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Scott Walkinshaw",
-                    "email": "scott.walkinshaw@gmail.com",
-                    "homepage": "https://github.com/swalkinshaw"
-                },
-                {
-                    "name": "Ben Word",
-                    "email": "ben@benword.com",
-                    "homepage": "https://github.com/retlehs"
-                }
-            ],
-            "description": "A WordPress plugin which contains a collection of modules to apply theme-agnostic front-end modifications",
-            "homepage": "https://roots.io/plugins/soil/",
-            "keywords": [
-                "wordpress"
-            ],
-            "time": "2015-12-24 19:42:34"
-        },
-        {
             "name": "seld/jsonlint",
             "version": "1.4.0",
             "source": {
@@ -1881,16 +2382,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v2.8.1",
+            "version": "v2.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "2e06a5ccb19dcf9b89f1c6a677a39a8df773635a"
+                "reference": "d0239fb42f98dd02e7d342f793c5d2cdee0c478d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/2e06a5ccb19dcf9b89f1c6a677a39a8df773635a",
-                "reference": "2e06a5ccb19dcf9b89f1c6a677a39a8df773635a",
+                "url": "https://api.github.com/repos/symfony/console/zipball/d0239fb42f98dd02e7d342f793c5d2cdee0c478d",
+                "reference": "d0239fb42f98dd02e7d342f793c5d2cdee0c478d",
                 "shasum": ""
             },
             "require": {
@@ -1937,20 +2438,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2015-12-22 10:25:57"
+            "time": "2016-01-14 08:33:16"
         },
         {
             "name": "symfony/debug",
-            "version": "v2.8.1",
+            "version": "v2.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "83e51a0e8940ed5e85788ba6bfa022634aa07869"
+                "reference": "386364a0e71158615ab9ae76b74bf84efc0bac7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/83e51a0e8940ed5e85788ba6bfa022634aa07869",
-                "reference": "83e51a0e8940ed5e85788ba6bfa022634aa07869",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/386364a0e71158615ab9ae76b74bf84efc0bac7e",
+                "reference": "386364a0e71158615ab9ae76b74bf84efc0bac7e",
                 "shasum": ""
             },
             "require": {
@@ -1994,20 +2495,20 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2015-12-26 13:37:56"
+            "time": "2016-01-13 10:28:07"
         },
         {
             "name": "symfony/expression-language",
-            "version": "v2.8.1",
+            "version": "v2.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/expression-language.git",
-                "reference": "6b3dc2ac918bc5839b49024db0e0171cd0f94f63"
+                "reference": "720eb3405f14fddea22626cb69b64e6dac82a749"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/expression-language/zipball/6b3dc2ac918bc5839b49024db0e0171cd0f94f63",
-                "reference": "6b3dc2ac918bc5839b49024db0e0171cd0f94f63",
+                "url": "https://api.github.com/repos/symfony/expression-language/zipball/720eb3405f14fddea22626cb69b64e6dac82a749",
+                "reference": "720eb3405f14fddea22626cb69b64e6dac82a749",
                 "shasum": ""
             },
             "require": {
@@ -2043,69 +2544,20 @@
             ],
             "description": "Symfony ExpressionLanguage Component",
             "homepage": "https://symfony.com",
-            "time": "2015-10-30 20:15:42"
-        },
-        {
-            "name": "symfony/finder",
-            "version": "v2.8.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/finder.git",
-                "reference": "dd41ae57f4f737be271d944a0cc5f5f21203a7c6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/dd41ae57f4f737be271d944a0cc5f5f21203a7c6",
-                "reference": "dd41ae57f4f737be271d944a0cc5f5f21203a7c6",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.9"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.8-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Finder\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Finder Component",
-            "homepage": "https://symfony.com",
-            "time": "2015-12-05 11:09:21"
+            "time": "2016-01-03 15:33:41"
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.0.1",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "49ff736bd5d41f45240cec77b44967d76e0c3d25"
+                "reference": "1289d16209491b584839022f29257ad859b8532d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/49ff736bd5d41f45240cec77b44967d76e0c3d25",
-                "reference": "49ff736bd5d41f45240cec77b44967d76e0c3d25",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/1289d16209491b584839022f29257ad859b8532d",
+                "reference": "1289d16209491b584839022f29257ad859b8532d",
                 "shasum": ""
             },
             "require": {
@@ -2117,7 +2569,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.1-dev"
                 }
             },
             "autoload": {
@@ -2151,20 +2603,20 @@
                 "portable",
                 "shim"
             ],
-            "time": "2015-11-20 09:19:13"
+            "time": "2016-01-20 09:13:37"
         },
         {
             "name": "symfony/process",
-            "version": "v2.8.1",
+            "version": "v2.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "62c254438b5040bc2217156e1570cf2206e8540c"
+                "reference": "6f1979c3b0f4c22c77a8a8971afaa7dd07f082ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/62c254438b5040bc2217156e1570cf2206e8540c",
-                "reference": "62c254438b5040bc2217156e1570cf2206e8540c",
+                "url": "https://api.github.com/repos/symfony/process/zipball/6f1979c3b0f4c22c77a8a8971afaa7dd07f082ac",
+                "reference": "6f1979c3b0f4c22c77a8a8971afaa7dd07f082ac",
                 "shasum": ""
             },
             "require": {
@@ -2200,20 +2652,20 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2015-12-23 11:03:46"
+            "time": "2016-01-06 09:59:23"
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.8.1",
+            "version": "v2.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "ac84cbb98b68a6abbc9f5149eb96ccc7b07b8966"
+                "reference": "34c8a4b51e751e7ea869b8262f883d008a2b81b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/ac84cbb98b68a6abbc9f5149eb96ccc7b07b8966",
-                "reference": "ac84cbb98b68a6abbc9f5149eb96ccc7b07b8966",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/34c8a4b51e751e7ea869b8262f883d008a2b81b8",
+                "reference": "34c8a4b51e751e7ea869b8262f883d008a2b81b8",
                 "shasum": ""
             },
             "require": {
@@ -2249,417 +2701,9 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2015-12-26 13:37:56"
-        },
-        {
-            "name": "vlucas/phpdotenv",
-            "version": "v2.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "9caf304153dc2288e4970caec6f1f3b3bc205412"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/9caf304153dc2288e4970caec6f1f3b3bc205412",
-                "reference": "9caf304153dc2288e4970caec6f1f3b3bc205412",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.9"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.8|^5.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.2-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Dotenv\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD"
-            ],
-            "authors": [
-                {
-                    "name": "Vance Lucas",
-                    "email": "vance@vancelucas.com",
-                    "homepage": "http://www.vancelucas.com"
-                }
-            ],
-            "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
-            "homepage": "http://github.com/vlucas/phpdotenv",
-            "keywords": [
-                "dotenv",
-                "env",
-                "environment"
-            ],
-            "time": "2015-12-29 15:10:30"
-        },
-        {
-            "name": "wp-papi/papi",
-            "version": "v2.4.10",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wp-papi/papi.git",
-                "reference": "6832262c4561f5e03bea99b42c191f25eac85746"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wp-papi/papi/zipball/6832262c4561f5e03bea99b42c191f25eac85746",
-                "reference": "6832262c4561f5e03bea99b42c191f25eac85746",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "~1.0",
-                "php": ">=5.4.7"
-            },
-            "require-dev": {
-                "frozzare/wp-test-suite": "~1.0",
-                "sebastian/phpcpd": "~2.0@dev",
-                "wp-coding-standards/wpcs": "dev-develop"
-            },
-            "type": "wordpress-plugin",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.5-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fredrik Forsmo",
-                    "email": "fredrik.forsmo@gmail.com",
-                    "homepage": "https://github.com/frozzare"
-                }
-            ],
-            "description": "WordPress Page Type API with custom fields",
-            "homepage": "https://wp-papi.github.io",
-            "keywords": [
-                "custom fields",
-                "page",
-                "page type",
-                "wordpress"
-            ],
-            "time": "2015-12-08 09:58:16"
-        },
-        {
-            "name": "wpackagist-plugin/google-analytics-for-wordpress",
-            "version": "5.4.6",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/google-analytics-for-wordpress/",
-                "reference": "tags/5.4.6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analytics-for-wordpress.5.4.6.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/google-analytics-for-wordpress/"
-        },
-        {
-            "name": "wpackagist-plugin/google-sitemap-generator",
-            "version": "4.0.8",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/google-sitemap-generator/",
-                "reference": "tags/4.0.8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-sitemap-generator.4.0.8.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/google-sitemap-generator/"
-        },
-        {
-            "name": "wpackagist-plugin/oembed-gist",
-            "version": "2.0.3",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/oembed-gist/",
-                "reference": "tags/2.0.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/oembed-gist.2.0.3.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/oembed-gist/"
-        },
-        {
-            "name": "wpackagist-plugin/polylang",
-            "version": "1.7.12",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/polylang/",
-                "reference": "tags/1.7.12"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/polylang.1.7.12.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/polylang/"
-        },
-        {
-            "name": "wpackagist-plugin/varnish-http-purge",
-            "version": "3.8",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/varnish-http-purge/",
-                "reference": "tags/3.8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/varnish-http-purge.3.8.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/varnish-http-purge/"
-        },
-        {
-            "name": "xrstf/composer-php52",
-            "version": "v1.0.19",
-            "source": {
-                "type": "hg",
-                "url": "https://bitbucket.org/xrstf/composer-php52",
-                "reference": "9a4a9c46d0347b39bf9159815301dc66fc25324e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://bitbucket.org/xrstf/composer-php52/get/9a4a9c46d0347b39bf9159815301dc66fc25324e.zip",
-                "reference": "9a4a9c46d0347b39bf9159815301dc66fc25324e",
-                "shasum": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-default": "1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "xrstf\\Composer52": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "homepage": "http://www.xrstf.de/",
-            "time": "2015-10-01 14:11:58"
-        },
-        {
-            "name": "yoast/api-libs",
-            "version": "2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Yoast/api-libs.git",
-                "reference": "e7361081a1d6ae79c0b96c8363379435ea736ef8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Yoast/api-libs/zipball/e7361081a1d6ae79c0b96c8363379435ea736ef8",
-                "reference": "e7361081a1d6ae79c0b96c8363379435ea736ef8",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "class-api-libs.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Team Yoast",
-                    "email": "support@yoast.com",
-                    "homepage": "https://yoast.com"
-                }
-            ],
-            "description": "Shared API libraries for Yoast projects.",
-            "homepage": "https://github.com/Yoast/api-libs",
-            "keywords": [
-                "wordpress"
-            ],
-            "time": "2015-07-14 10:25:59"
-        },
-        {
-            "name": "yoast/i18n-module",
-            "version": "1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Yoast/i18n-module.git",
-                "reference": "4648918ccf8bc6da12eadf57e4bece4829af29b3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Yoast/i18n-module/zipball/4648918ccf8bc6da12eadf57e4bece4829af29b3",
-                "reference": "4648918ccf8bc6da12eadf57e4bece4829af29b3",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "i18n-module.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Team Yoast",
-                    "email": "support@yoast.com",
-                    "homepage": "https://yoast.com"
-                }
-            ],
-            "description": "Handle i18n for WordPress plugins.",
-            "homepage": "https://github.com/Yoast/i18n-module",
-            "keywords": [
-                "wordpress"
-            ],
-            "time": "2015-04-22 12:48:39"
-        },
-        {
-            "name": "yoast/license-manager",
-            "version": "1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Yoast/License-Manager.git",
-                "reference": "8caf52202bf51011686e31c9a43b18731047f1be"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Yoast/License-Manager/zipball/8caf52202bf51011686e31c9a43b18731047f1be",
-                "reference": "8caf52202bf51011686e31c9a43b18731047f1be",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "class-api-request.php",
-                    "class-license-manager.php",
-                    "class-plugin-license-manager.php",
-                    "class-plugin-update-manager.php",
-                    "class-product.php",
-                    "class-theme-license-manager.php",
-                    "class-theme-update-manager.php",
-                    "class-update-manager.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Team Yoast",
-                    "email": "support@yoast.com",
-                    "homepage": "https://yoast.com"
-                }
-            ],
-            "description": "Yoast License Manager.",
-            "homepage": "https://github.com/Yoast/License-Manager",
-            "keywords": [
-                "wordpress"
-            ],
-            "time": "2015-03-16 11:51:33"
-        },
-        {
-            "name": "yoast/wordpress-seo",
-            "version": "3.0.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Yoast/wordpress-seo.git",
-                "reference": "03156d3f045039cacb773ae56634766015328542"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Yoast/wordpress-seo/zipball/03156d3f045039cacb773ae56634766015328542",
-                "reference": "03156d3f045039cacb773ae56634766015328542",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "~1.0",
-                "xrstf/composer-php52": "^1.0.19",
-                "yoast/api-libs": "^2.0",
-                "yoast/i18n-module": "^1.0",
-                "yoast/license-manager": "^1.2"
-            },
-            "require-dev": {
-                "codeclimate/php-test-reporter": "dev-master",
-                "yoast/yoastcs": "dev-master"
-            },
-            "type": "wordpress-plugin",
-            "autoload": {
-                "classmap": [
-                    "admin/",
-                    "frontend/",
-                    "inc/",
-                    "deprecated/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Team Yoast",
-                    "email": "support@yoast.com",
-                    "homepage": "https://yoast.com"
-                }
-            ],
-            "description": "Improve your WordPress SEO: Write better content and have a fully optimized WordPress site using the Yoast SEO plugin.",
-            "homepage": "https://yoast.com/wordpress/plugins/seo/",
-            "keywords": [
-                "seo",
-                "wordpress"
-            ],
-            "time": "2015-12-23 10:19:52"
+            "time": "2016-01-13 10:28:07"
         }
     ],
-    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],

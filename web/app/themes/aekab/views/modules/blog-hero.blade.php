@@ -1,4 +1,4 @@
-<div class="w-section heroblogpage" style="background-image: url('{{ wp_get_attachment_image_src( get_post_thumbnail_id( $module->ID ), 'full' )[0] }}');">
+<div class="w-section heroblogpage" style="background-image: url('{{ wp_get_attachment_image_src( get_post_thumbnail_id( $module->id ), 'full' )[0] }}');">
   <div class="heroblogwrapper">
     <div class="w-container">
       <div class="blogheroframeheadlinediv">

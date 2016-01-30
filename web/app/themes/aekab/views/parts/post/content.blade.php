@@ -13,7 +13,7 @@
       $content = str_replace( '<p>', '<p class="contentbodytext">', $content );
     ?>
 
-      {{ $content }}
+      {!! $content !!}
 
       <p>&nbsp;</p>
       @include('views.parts.swisch')

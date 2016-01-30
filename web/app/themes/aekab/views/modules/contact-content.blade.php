@@ -7,11 +7,12 @@
           <h3 class="contenth3">{{$module->headline2}}</h3>
 
           @if( $module->blocks )
-            <?php $blocks = papi_get_field( $module->ID, 'blocks' ); ?>
-            @foreach( $blocks as $block ) 
-              <h4 class="contenth4">{{ $block['headline'] }}</h4>
-              <p class="contentbodytext">{{ $block['text'] }}</p>
-            @endforeach
+            @if($blocks = papi_get_field( $module->id, 'blocks' ))
+              @foreach( $blocks as $block ) 
+                <h4 class="contenth4">{{ $block['headline'] }}</h4>
+                <p class="contentbodytext">{{ $block['text'] }}</p>
+              @endforeach
+            @endif
           @endif
 
         </div>

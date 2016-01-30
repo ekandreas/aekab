@@ -34,13 +34,17 @@
 
             }
 
+            $bladequery = new WP_Query($args);
+            if ( $bladequery->have_posts() ) {
+              while ( $bladequery->have_posts() )  {
+                $bladequery->the_post();
+                ?>
+                @include('views.parts.post.pusher')
+                <?php
+              }
+            }
+            wp_reset_postdata();
           ?>
-
-          @wpquery( $args )
-            @include('views.parts.post.pusher')
-          @wpempty
-              {{ __( 'Inga poster...','aekab' ) }}
-          @wpend
 
           <!--a href="#" class="w-inline-block blogmorearticlesbtn">
             <div class="blogmorearticlesbtntxt">Visa fler</div>
