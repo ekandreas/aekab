@@ -12,6 +12,11 @@ class Modules_Page_Type extends Papi_Page_Type
         ];
     }
 
+    public function remove() {
+        return [
+        ];
+    }
+
     public function register() {
 
         $this->remove([

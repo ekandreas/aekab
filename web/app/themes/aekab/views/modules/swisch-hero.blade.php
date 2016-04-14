@@ -5,7 +5,7 @@
           <div class="w-col w-col-7 aboutpageherocol1">
             <h1 class="frameheadline">{{the_title()}}</h1>
             <div class="herotxt">
-              {{ $module->herotext }}
+              {!! $module->herotext !!}
             </div>
             <div class="aboutheroswisch"><img alt="Swisch" width="802" src="{{ ekandreas\Assets\asset_path('images/swisch2.png') }}">
             </div>

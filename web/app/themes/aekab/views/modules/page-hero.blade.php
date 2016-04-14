@@ -7,7 +7,7 @@
             <div class="servicepageswischdiv"><img alt="Swisch" width="803" src="{{ ekandreas\Assets\asset_path('images/swisch1.png') }}">
             </div>
             <h1 class="frameheadline">{{the_title()}}</h1>
-            <div class="herotxt">{{ $module->herotext }}</div>
+            <div class="herotxt">{!! $module->herotext !!}</div>
           </div>
         </div>
       </div>

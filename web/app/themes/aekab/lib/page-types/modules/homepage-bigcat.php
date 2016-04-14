@@ -13,12 +13,14 @@ class Homepage_BigCat_Module_Type extends Papi_Page_Type
         ];
     }
 
+    public function remove() {
+        return [
+            'editor', 'wpseo_meta',
+        ];
+    }
+
     public function register()
     {
-        $this->remove([
-            'editor', 'wpseo_meta',
-        ]);
-
         $this->box(__('Innehåll', 'aekab'), [
 
             papi_property([

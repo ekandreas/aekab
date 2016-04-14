@@ -13,10 +13,13 @@ class Hero_Contact_Module_Type extends Papi_Page_Type
         ];
     }
 
+    public function remove() {
+        return [
+            'editor', 'wpseo_meta',
+        ];
+    }
+
     public function register()
     {
-        $this->remove([
-            'editor', 'wpseo_meta',
-        ]);
     }
 }
