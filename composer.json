@@ -34,7 +34,8 @@
     "roots/soil": "*",
     "wpackagist-plugin/varnish-http-purge": "*",
     "wpackagist-plugin/polylang": "*",
-    "ekandreas/bladerunner": "*"
+    "ekandreas/bladerunner": "*",
+    "wpackagist-plugin/query-monitor": "*"
   },
   "extra": {
     "installer-paths": {

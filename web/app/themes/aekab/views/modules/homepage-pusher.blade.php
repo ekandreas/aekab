@@ -11,7 +11,7 @@
 
       @if( $module->posts )
         @foreach( $module->posts as $post )
-          <!-- {{ the_post($post) }} -->
+          <!-- {{ setup_postdata( $GLOBALS['post'] =& $post ) }} -->
           <div class="w-col w-col-4">
             <div class="puffwrapper">
               @if( papi_get_page_type_id( $post->ID ) == 'blog-post' )
