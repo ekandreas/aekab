@@ -264,6 +264,7 @@
 
 .puffwrapper {
   height: 430px;
+  margin-bottom: 30px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px 0px;
 }
