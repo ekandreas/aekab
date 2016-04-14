@@ -5,8 +5,8 @@ include_once 'vendor/ekandreas/docker-bedrock/recipe.php';
 include_once 'vendor/ekandreas/dipwpe/main.php';
 
 env('remote.name','aekab');
-env('remote.path','/mnt/persist/www/aekab.se');
-env('remote.ssh','root@andreasek.se');
+env('remote.path','/home/forge/www.aekab.se');
+env('remote.ssh','forge@178.62.249.226');
 env('remote.database','aekab');
 env('remote.domain','aekab.se');
 env('local.domain','aekab.dev');
@@ -16,9 +16,9 @@ server( 'development', 'default', 22 )
     ->env('container','bedrock')
     ->env('deploy_path','/var/www/aekab');
 
-server( 'production', 'andreasek.se', 22 )
-    ->env('deploy_path','/mnt/persist/www/aekab.se')
-    ->user( 'root' )
+server( 'production', '178.62.249.226', 22 )
+    ->env('deploy_path','/home/forge/www.aekab.se')
+    ->user( 'forge' )
     ->env('branch', 'master')
     ->stage('production')
     ->identityFile();
@@ -31,7 +31,7 @@ set('keep_releases', 10);
 set('shared_dirs', ['web/app/uploads','web/app/themes/aekab/.cache']);
 set('shared_files', ['.env', 'web/.htaccess', 'web/robots.txt']);
 set('env_vars', '/usr/bin/env');
-set('writable_dirs', ['web/app/uploads']);
+//set('writable_dirs', ['web/app/uploads']);
 
 task('deploy:restart', function () {
     writeln('Purge cache...');

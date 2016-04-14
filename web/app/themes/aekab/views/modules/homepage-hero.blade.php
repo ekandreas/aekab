@@ -10,7 +10,7 @@
             </div>
             <div class="startpageherocolthree"></div>
           </div>
-          <div class="startpageheaderend">{{ $module->thirdliner }}</div>
+          <div class="startpageheaderend">{!! $module->thirdliner !!}</div>
           <p class="startpageherop">{{ $module->sellpoint }}</p>
           <div class="w-row startpageherorow">
             <div class="w-col w-col-6 w-col-small-6 w-clearfix">
