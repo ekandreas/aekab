@@ -69,7 +69,7 @@
   </div>
   <div class="w-section sectionpuffsmorenews">
     <div class="w-container">
-      <?php $more = papi_get_field( $module->ID, 'more' ); ?>
+      <?php $more = papi_get_field( $module->id, 'more' ); ?>
       @if( $more )
       <a href="{{ $more->url }}" class="w-inline-block startpagelinkblockmorenews">
         <div>{{ $more->title }}</div>
@@ -78,3 +78,11 @@
     </div>
   </div>
   @include('views.parts.swisch')
+
+@if(current_user_can('edit_post',$module->id))
+  <div class="w-container">
+    <a target="_blank" class="footeremaillink w-inline-block" href="{{ admin_url('post.php?action=edit&post='.$module->id)}}"><i class="fa fa-edit"></i> Edit module '{{ get_the_title($module->id) }}'</a>
+  </div>
+@endif
+
+
