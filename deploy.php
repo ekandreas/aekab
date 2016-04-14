@@ -50,3 +50,24 @@ task( 'deploy', [
     'deploy:restart',
     'success'
 ] )->desc( 'Deploy your Bedrock project, eg dep deploy production' );
+
+task('pull:files', function () {
+    writeln('Getting uploads, long duration first time! (approx. 60s)');
+    runLocally('rsync --exclude .cache -re ssh {{remote.ssh}}:{{remote.path}}/web/app/uploads web/app', 999);
+});
+
+task('pull:deactivate', function () {
+    writeln('Deactivate SEO');
+    runLocally('cd web && wp plugin deactivate wordpress-seo', 999);
+});
+
+task('pull', [
+    'pull:create_database_dump',
+    'pull:get_database_dump',
+    'pull:restore_database',
+    'pull:search_and_replace_database',
+    'pull:files',
+    'pull:elastic',
+    'pull:deactivate',
+    'pull:cleanup',
+]);

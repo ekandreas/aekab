@@ -11,7 +11,7 @@
 
       @if( $module->posts )
         @foreach( $module->posts as $post )
-
+          <!-- {{ the_post($post) }} -->
           <div class="w-col w-col-4">
             <div class="puffwrapper">
               @if( papi_get_page_type_id( $post->ID ) == 'blog-post' )
@@ -39,7 +39,7 @@
                 </div>
                 <div class="w-clearfix puffheaderright">
                   <div class="w-clearfix puffheaderrightinside">
-                    <div class="puffheaderdate">{{ get_the_date( 'j' ) }} {{ strtolower( get_the_date( 'F' ) ) }} {{ get_the_date( 'Y' ) }}</div>
+                    <div class="puffheaderdate">{{ get_the_date( 'j', $post->ID ) }} {{ strtolower( get_the_date( 'F', $post->ID ) ) }} {{ get_the_date( 'Y', $post->ID ) }}</div>
                   </div>
                 </div>
                 <div class="puffbggradient">
@@ -79,10 +79,6 @@
   </div>
   @include('views.parts.swisch')
 
-@if(current_user_can('edit_post',$module->id))
-  <div class="w-container">
-    <a target="_blank" class="footeremaillink w-inline-block" href="{{ admin_url('post.php?action=edit&post='.$module->id)}}"><i class="fa fa-edit"></i> Edit module '{{ get_the_title($module->id) }}'</a>
-  </div>
-@endif
+@include('views.parts.admin-edit')
 
 

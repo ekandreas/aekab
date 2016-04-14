@@ -8,7 +8,8 @@ class Cpt
         add_action( 'init', function () {
 
             if( !function_exists('register_extended_post_type') ) {
-                include_once( $_SERVER['DOCUMENT_ROOT'] . '/../vendor/johnbillion/extended-cpts/extended-cpts.php');
+                $path = realpath($_SERVER['DOCUMENT_ROOT'] . '/../' . 'vendor/johnbillion/extended-cpts/');
+                include_once( $path . '/extended-cpts.php' );
             }
             
             if( function_exists('register_extended_post_type') ) {
