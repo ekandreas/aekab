@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8">
-  <title>AEKAB</title>
+  <title>Elseif</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="Webflow">
   <link rel="stylesheet" type="text/css" href="{{ ekandreas\Assets\asset_path('styles/main.css') }}">
