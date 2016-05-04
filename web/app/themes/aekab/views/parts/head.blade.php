@@ -22,6 +22,8 @@
     <meta property="og:image" content="{{ ekandreas\Assets\asset_path('assets/images/aekab-symbol.png')  }}" /> 
   @endif
 
+  <meta name="google-site-verification" content="DQ4VLtFXFZhD0gvqtd79K89i8imKoFwGd_qSNSLcPkY" />
+
   {{ wp_head() }}
 
 </head>
