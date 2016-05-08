@@ -12,14 +12,19 @@
               <h2 class="contactheroh2">Kundkontakt</h2>
               <div class="contactherotxt">Andreas Ek</div>
               <h2 class="contactheroh2">Telefon</h2><a href="tel:070-3032203" class="contactherophone">070 - 303 22 03</a>
-              <h2 class="contactheroh2">E-post</h2><a href="mailto:andreas@aekab.se" class="contactheromail">andreas@aekab.se</a>
+              <h2 class="contactheroh2">E-post</h2><a href="mailto:andreas@elseif.se" class="contactheromail">andreas@elseif.se</a>
             </div>
           </div>
         </div>
         <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6 contactrowcol2">
           <h2 class="contactheroh2">Företagsadress</h2>
           <div class="contactherotxt">Byalagsgatan 2
-            <br>725 91 Västerås</div>
+            <br>725 91 Västerås
+          </div>
+          <h2 class="contactheroh2">Besöksadress</h2>
+          <div class="contactherotxt">Sjöhagsvägen 2
+            <br>721 32 Västerås
+          </div>
           <h2 class="contactheroh2">Organisationsnummer</h2>
           <div class="contactherotxt last">55 90 02 &nbsp;- &nbsp;3395</div>
         </div>
