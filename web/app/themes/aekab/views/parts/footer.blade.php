@@ -1,7 +1,7 @@
   <div class="w-section sectionfooter">
     <div class="w-container">
       <div class="w-row footerrow">
-        <div class="w-col w-col-6"><img alt="Logo AEKAB" width="174" src="{{ ekandreas\Assets\asset_path('images/logo-footer-grey.png') }}" class="footerlogo">
+        <div class="w-col w-col-6"><img alt="Logo AEKAB" width="174" src="{{ ekandreas\Assets\asset_path('images/elseif.png') }}" class="footerlogo">
           <p class="footerp">
             {{ papi_get_option('footer_summary') }}
           </p>
