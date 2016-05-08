@@ -3,7 +3,7 @@
       <div class="w-row footerrow">
         <div class="w-col w-col-6"><img alt="Logo AEKAB" width="174" src="{{ ekandreas\Assets\asset_path('images/elseif.png') }}" class="footerlogo">
           <p class="footerp">
-            {{ papi_get_option('footer_summary') }}
+            Elseif AB är placerat i Mälardalen och har kunder kring Stockholm. Vi arbetar med tjänster och produkter för digitala, redaktionella system. Utgångspunkten för våra leveranser startar i öppenhet där öppen källkod eftersträvas där det är möjligt.
           </p>
           <div class="w-clearfix footersharediv">
             <div class="footerheartbox">
@@ -25,9 +25,10 @@
             </ul>
           </div>
           <div class="w-hidden-small w-hidden-tiny footerrightbox">
-            <h3 class="footerh3">{{ papi_get_option('footer_contact_headline') }}</h3>
+            <h3 class="footerh3">Elseif AB</h3>
             <p class="footerdata">
-              {!! str_replace("\n","<br/>", papi_get_option('footer_contact_text1') ) !!}
+              Sjöhagsvägen 2<br/>
+              721 32 Västerås
             </p>
           </div>
         </div>
