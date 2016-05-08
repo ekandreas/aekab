@@ -48,7 +48,8 @@
           <div class="w-hidden-small w-hidden-tiny footerrightbox">
             <h3 class="footerh3 footerh3hide">&nbsp;</h3>
             <p class="w-hidden-small w-hidden-tiny footerdata">
-              {!! str_replace("\n","<br/>", papi_get_option('footer_contact_text2') ) !!}
+              E-post: <a href="info@elseif.se">info@elseif.se</a><br/>
+              Telefon: 070 - 303 22 03
             </p>
           </div>
         </div>
